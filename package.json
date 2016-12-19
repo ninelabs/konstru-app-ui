@@ -1,0 +1,18 @@
+{
+  "name": "konstru-theme",
+  "version": "1.0.0",
+  "description": "Bootstrap Theme for Konstru",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mustache-express": "^1.2.4",
+    "node-sass": "^4.1.0",
+    "node-sass-middleware": "^0.10.0",
+    "nodemon": "^1.11.0"
+  }
+}

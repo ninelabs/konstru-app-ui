@@ -1,0 +1,8 @@
+# Typical node things to ignore
+npm-debug.log*
+node_modules
+.npm
+.eslintcache
+
+# Project specific things to ignore
+public/*
