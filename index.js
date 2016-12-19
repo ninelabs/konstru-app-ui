@@ -13,14 +13,14 @@ app.set("layout", "layouts/layout");
 app.use(
   sassMiddleware({
     src: path.join(__dirname, 'sass'),
-    dest: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public/css'),
     debug: true,
     outputStyle: 'compressed',
-    prefix:  '/theme'
+    prefix: '/css'
   })
 );
 
-app.use('/public', express.static(path.join(__dirname, 'public')));
+app.use('/css', express.static(path.join(__dirname, 'public/css')));
 
 app.get('/', function (req, res) {
   res.render('index');
