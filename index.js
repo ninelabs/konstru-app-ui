@@ -46,7 +46,17 @@ app.get('/components', function (req, res) {
 });
 
 app.get('/prototype/:page', function(req, res) {
-  res.render('prototype/' + req.params.page, {layout: 'prototype'});
+  res.render('prototype/' + req.params.page, {layout: 'prototype'}, function(err, html) {
+    if (err) {
+      res.status(404).render('404');
+    } else {
+      res.send(html);
+    }
+  });
+});
+
+app.get('*', function(req, res) {
+  res.status(404).render('404');
 });
 
 app.listen(process.env.PORT || 3000, function () {
