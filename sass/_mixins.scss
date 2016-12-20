@@ -4,6 +4,12 @@
   background: $background linear-gradient(lighten($background, 5%), $bottom);
   box-shadow: #E9EAEB 0 1px 0;
 
+  .text-muted {
+    color: fade-out($color, 0.3) !important;
+    opacity: 0.6;
+    font-weight: 400;
+  }
+
   &:focus,
   &.focus {
     color: $color;
