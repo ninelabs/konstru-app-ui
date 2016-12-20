@@ -4,12 +4,6 @@
   padding: 0.45rem 0.8rem 0.55rem;
   -webkit-font-smoothing: subpixel-antialiased;
   transition: background 0.2s linear, border .1s linear, color .1s linear;
-
-  .text-muted {
-    color: inherit !important;
-    opacity: 0.6;
-    font-weight: 400;
-  }
 }
 
 .btn-sm {
@@ -47,6 +41,13 @@
 
 .btn-inverse {
   @include button-variant(#fff, $color-dark);
+}
+
+.btn-link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .dropdown-toggle {
