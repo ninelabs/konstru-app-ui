@@ -29,6 +29,9 @@ app.get('/components', function (req, res) {
   res.render('components/index');
 });
 
+app.get('/prototype/:page', function(req, res) {
+  res.render('prototype/' + req.params.page, {layout: 'prototype'});
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
