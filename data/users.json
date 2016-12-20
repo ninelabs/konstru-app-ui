@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Steve Smith",
+    "avatar": "orderedlist.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Rogie King",
+    "avatar": "rogie.png"
+  },
+  {
+    "id": 3,
+    "name": "J Cornelius",
+    "avatar": "jcornelius.png"
+  }
+]

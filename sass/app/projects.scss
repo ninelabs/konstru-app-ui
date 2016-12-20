@@ -1,0 +1,43 @@
+@import "../variables";
+
+.project {
+  width: $grid-gutter-width-base + 300px;
+  flex: 1 1 auto;
+  min-width: 300px;
+  max-width: 480px;
+
+  &-title {
+    margin-bottom: -.285rem;
+  }
+
+  &-image {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+
+    img {
+      width: 298px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset $border-color 0 1px 0, inset $border-color 0 -1px 0;
+    }
+  }
+
+  .avatar {
+    float: left;
+    margin: 2px 8px 2px 0;
+  }
+}
+
+.projects-filter {
+  max-width: 360px;
+  margin-right: 1rem;
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Met Life Stadium",
+    "description": "",
+    "models_count": 3,
+    "updated_at": "2016-12-20T15:10:52.376Z",
+    "updated_by": 1,
+    "image": "projects/metlife.jpg",
+    "users": [1,2]
+  },
+  {
+    "name": "Superdome",
+    "description": "",
+    "models_count": 6,
+    "updated_at": "2016-12-20T07:44:33.337Z",
+    "updated_by": 2,
+    "image": "projects/superdome.jpg",
+    "users": [1,2,3]
+  },
+  {
+    "name": "Ford Field",
+    "description": "",
+    "models_count": 3,
+    "updated_at": "2016-12-15T19:46:17.220Z",
+    "updated_by": 1,
+    "image": "projects/ford.jpg",
+    "users": [3,2]
+  },
+  {
+    "name": "Georgia Dome",
+    "description": "",
+    "models_count": 1,
+    "updated_at": "2016-12-18T19:46:48.338Z",
+    "updated_by": 1,
+    "image": "projects/georgia.jpg",
+    "users": [3]
+  },
+  {
+    "name": "AT&T Stadium",
+    "description": "",
+    "models_count": 9,
+    "updated_at": "2016-12-17T19:47:33.417Z",
+    "updated_by": 3,
+    "image": "projects/att.jpg",
+    "users": [1,2,3]
+  },
+  {
+    "name": "Lucas Oil Stadium",
+    "description": "",
+    "models_count": 3,
+    "updated_at": "2016-12-08T20:40:46.105Z",
+    "updated_by": 2,
+    "image": "projects/lucas.jpg",
+    "users": [1,3]
+  },
+  {
+    "name": "Levi's Stadium",
+    "description": "",
+    "models_count": 9,
+    "updated_at": "2016-11-29T20:41:47.937Z",
+    "updated_by": 2,
+    "image": "projects/levis.jpg",
+    "users": [1,2,3]
+  },
+  {
+    "name": "US Bank Stadium",
+    "description": "",
+    "models_count": 14,
+    "updated_at": "2016-12-14T20:45:23.567Z",
+    "updated_by": 1,
+    "image": "projects/usbank.jpg",
+    "users": [1,2]
+  }
+]
