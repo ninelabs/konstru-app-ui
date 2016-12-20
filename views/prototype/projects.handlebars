@@ -1,0 +1,41 @@
+{{#contentFor "pageTitle"}}All Projects{{/contentFor}}
+
+{{> nav projects_class='active'}}
+
+<div class="container-fluid pt-1">
+
+  <div class="toolbar clearfix pb-1">
+    <div class="projects-filter input-group float-xs-left">
+      <div class="input-group-btn">
+        <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Active projects <span class="caret"></span>
+        </button>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="#">Active projects</a></li>
+          <li><a href="#">Archived projects</a></li>
+        </ul>
+      </div>
+      <input type="text" name="" placeholder="Filter…" class="form-control">
+    </div>
+
+    <div class="btn-group float-xs-left">
+      <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button">
+        <span class="text-muted">Sort by:</span> Name
+        <span class="caret"></span>
+      </button>
+      <ul role="menu" class="dropdown-menu">
+        <li><a href="#">Name</a></li>
+        <li><a href="#">Recently updated</a></li>
+        <li><a href="#">Number of models</a></li>
+      </ul>
+    </div>
+
+    <a href="#" class="btn btn-success float-xs-right">Create a project</a>
+  </div>
+
+  <div class="row row-wrap">
+    {{#withSort prototypeData.projects "name"}}
+      {{> project this}}
+    {{/withSort}}
+  </div>
+</div>

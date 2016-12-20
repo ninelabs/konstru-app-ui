@@ -1,26 +1,12 @@
-var express = require('express');
-var path = require('path');
-var app = express();
-var sassMiddleware = require('node-sass-middleware');
-var exphbs = require('express-handlebars');
+const express = require('express');
+const path = require('path');
+const app = express();
+const sassMiddleware = require('node-sass-middleware');
+const exphbs = require('express-handlebars');
+const prototypeData = require('./lib/prototype_data.js');
+const helpers = require('./lib/helpers')(prototypeData);
 
-var hbs = exphbs.create({
-  helpers: {
-    block: function(name){
-      var blocks = this._blocks;
-          content = blocks && blocks[name];
-      return content ? content.join('\n') : null;
-    },
-    contentFor: function(name, options){
-      var blocks = this._blocks || (this._blocks = {});
-          block = blocks[name] || (blocks[name] = []);
-      block.push(options.fn(this));
-    }
-  },
-  defaultLayout: 'layout'
-});
-
-app.engine('handlebars', hbs.engine);
+app.engine('handlebars', exphbs.create({ helpers: helpers, defaultLayout: 'layout'}).engine);
 
 app.set('view engine', 'handlebars');
 
@@ -46,12 +32,9 @@ app.get('/components', function (req, res) {
 });
 
 app.get('/prototype/:page', function(req, res) {
-  res.render('prototype/' + req.params.page, {layout: 'prototype'}, function(err, html) {
-    if (err) {
-      res.status(404).render('404');
-    } else {
-      res.send(html);
-    }
+  res.render('prototype/' + req.params.page, {
+    layout: 'prototype',
+    prototypeData: prototypeData
   });
 });
 

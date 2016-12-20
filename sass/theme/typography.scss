@@ -27,3 +27,18 @@ blockquote {
     font-style: italic;
   }
 }
+
+.section-header {
+  font-weight: 300;
+  padding-top: 0.225rem;
+  padding-bottom: 0.225rem;
+  margin-bottom: 0;
+}
+
+.link-unstyled {
+  color: inherit;
+}
+
+.text-semibold {
+  font-weight: 500;
+}

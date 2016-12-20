@@ -1,0 +1,29 @@
+@import "../variables";
+
+.avatar {
+  overflow: hidden;
+  display: inline-block;
+
+  &-small {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset $border-color 0 0 0 1px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      float: left; // Remove padding added by some browsers
+    }
+  }
+}

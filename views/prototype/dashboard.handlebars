@@ -1,3 +1,19 @@
 {{#contentFor "pageTitle"}}Dashboard{{/contentFor}}
 
 {{> nav dashboard_class='active'}}
+
+<div class="container-fluid pt-1">
+  <div class="mb-1 clearfix">
+    <a href="#" class="btn btn-success float-xs-right">Create a project</a>
+    <h3 class="section-header">Active Projects</h3>
+  </div>
+  <div class="row row-wrap row-single-height mb-2">
+    {{#withSort prototypeData.projects "updated_at" reverse="true"}}
+      {{> project this}}
+    {{/withSort}}
+  </div>
+<!--
+  <div class="mb-1 clearfix">
+    <h3 class="section-header">Recent activity</h3>
+  </div> -->
+</div>
