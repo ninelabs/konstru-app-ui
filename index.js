@@ -2,9 +2,25 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var sassMiddleware = require('node-sass-middleware');
-var exphbs  = require('express-handlebars');
+var exphbs = require('express-handlebars');
 
-app.engine('handlebars', exphbs({defaultLayout: 'layout'}));
+var hbs = exphbs.create({
+  helpers: {
+    block: function(name){
+      var blocks = this._blocks;
+          content = blocks && blocks[name];
+      return content ? content.join('\n') : null;
+    },
+    contentFor: function(name, options){
+      var blocks = this._blocks || (this._blocks = {});
+          block = blocks[name] || (blocks[name] = []);
+      block.push(options.fn(this));
+    }
+  },
+  defaultLayout: 'layout'
+});
+
+app.engine('handlebars', hbs.engine);
 
 app.set('view engine', 'handlebars');
 
