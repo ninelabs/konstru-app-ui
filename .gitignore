@@ -4,5 +4,8 @@ node_modules
 .npm
 .eslintcache
 
+# OS level ignores
+.DS_Store
+
 # Project specific things to ignore
-public/*
+public/css
