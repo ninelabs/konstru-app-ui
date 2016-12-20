@@ -1,0 +1,390 @@
+<div class="container pb-3">
+  <div class="row mt-3">
+    <div class="col-md-2 pt-2">
+      <a href="/"><img src="/images/logo.svg" width="140" class="mb-2" /></a>
+      <h6>Components</h6>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+        <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
+        <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#progress">Progress Bars</a></li>
+        <li class="nav-item"><a class="nav-link" href="#typography">Typography</a></li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      <div class="mb-3">
+        <div id="buttons" class="display-4">
+          Buttons
+        </div>
+        <p class="lead">
+          Mostly secondary and primary buttons should be used, but in some circumstances
+          one of the other options might be useful. Small buttons only when space is at a premium.
+        </p>
+
+        <h5 class="mb-1">Normal Buttons</h5>
+
+        <div class="row demo-row">
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-primary">Primary Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-warning">Warning Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-secondary">Secondary Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-danger">Danger Button</a>
+          </div>
+        </div> <!-- /row -->
+
+        <div class="row demo-row">
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-success">Success Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-inverse">Inverse Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-info">Info Button</a>
+          </div>
+          <div class="col-xs-3">
+            <a href="#fakelink" class="btn btn-block btn-secondary disabled">Disabled Button</a>
+          </div>
+        </div> <!-- /row -->
+
+        <h5 class="mb-1">Small Buttons</h5>
+
+        <div class="row demo-row">
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-primary">Primary Button</a>
+          </div>
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-secondary">Secondary Button</a>
+          </div>
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-warning">Warning Button</a>
+          </div>
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-danger">Danger Button</a>
+          </div>
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-info">Info Button</a>
+          </div>
+          <div class="col-xs-2">
+            <a href="#fakelink" class="btn btn-block btn-sm btn-inverse">Inverse Button</a>
+          </div>
+        </div>
+
+        <div class="row demo-row">
+          <button type="button" class="btn btn-sm btn-link">This is a link button</button>
+        </div>
+
+        <h5 class="mb-1">Dropdowns &amp; Button Groups</h5>
+
+        <div class="row">
+          <div class="col-xs-3">
+
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button">Dropdown with list <span class="caret"></span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div><!-- /btn-group -->
+          </div>
+
+          <div class="col-xs-4">
+
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button"><span class="text-muted">Select: </span>Dropdown with items <span class="caret"></span></button>
+              <div role="menu" class="dropdown-menu">
+                <div class="dropdown-menu-item">
+                  <h6 class="dropdown-menu-item-title">Menu Item 1</h6>
+                  <div class="text-muted">
+                    This is some menu item text
+                  </div>
+                </div>
+                <div class="dropdown-menu-item">
+                  <h6 class="dropdown-menu-item-title">Menu Item 2</h6>
+                  <div class="text-muted">
+                    This is some menu item text
+                  </div>
+                </div>
+                <div class="dropdown-menu-item">
+                  <h6 class="dropdown-menu-item-title">Menu Item 3</h6>
+                  <div class="text-muted">
+                    This is some menu item text
+                  </div>
+                </div>
+              </div>
+            </div><!-- /btn-group -->
+          </div> <!-- /.col-xs-3 -->
+
+          <div class="col-xs-5">
+            <div class="btn-group btn-group-justified" data-toggle="buttons">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary active">Option 1</button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">Option 2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="mb-3">
+        <div class="display-4">
+          <a name="colors">Colors</a>
+        </div>
+
+        <p class="lead">
+          Use these text utilities to color text and backgrounds.
+        </p>
+
+        <div class="row demo-row">
+          <div class="col-xs-2">
+            Normal text
+          </div>
+          <div class="col-xs-2">
+            <span class="text-success">.text-success</span>
+          </div>
+          <div class="col-xs-2">
+            <span class="text-info">.text-info</span>
+          </div>
+          <div class="col-xs-2">
+            <span class="text-warning">.text-warning</span>
+          </div>
+          <div class="col-xs-2">
+            <span class="text-danger">.text-danger</span>
+          </div>
+
+          <div class="col-xs-2">
+            <span class="text-muted">.text-muted</span>
+          </div>
+        </div>
+
+        <div class="row demo-row">
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-inverse text-white">
+              .bg-inverse
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-success text-white">
+              .bg-success
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-info text-white">
+              .bg-info
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-warning text-white">
+              .bg-warning
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-danger text-white">
+              .bg-danger
+            </div>
+          </div>
+
+          <div class="col-xs-2">
+            <div class="p-1 rounded bg-faded">
+              .bg-faded
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="forms" class="display-4">
+        Forms
+      </div>
+
+      <div class="lead mb-2">
+        Form entries should remain pretty standard. Use of the <code>.form-control</code>
+        will help everything stay in line.
+      </div>
+
+      <div class="row demo-row">
+        <div class="col-xs-3">
+          <div class="form-group">
+            <input type="text" value="" placeholder="Inactive" class="form-control" />
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="form-group has-error">
+            <input type="text" value="" placeholder="Error" class="form-control" />
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="form-group has-success">
+            <input type="text" value="" placeholder="Success" class="form-control" />
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="form-group">
+            <input type="text" value="Disabled" disabled="disabled" class="form-control" />
+          </div>
+        </div>
+      </div> <!-- /row -->
+
+      <div class="row demo-row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <select class="form-control custom-select">
+              <option value="0">Choose hero</option>
+              <option value="1">Spider Man</option>
+              <option value="2">Wolverine</option>
+              <option value="3">Captain America</option>
+              <option value="4" selected>Select Box: X-Men</option>
+              <option value="5">Crocodile</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <select class="form-control custom-select" disabled>
+              <option value="0">Choose hero</option>
+              <option value="1">Spider Man</option>
+              <option value="2">Wolverine</option>
+              <option value="3">Captain America</option>
+              <option value="4" selected>Select Box: Disabled</option>
+              <option value="5">Crocodile</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row demo-row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <textarea  class="form-control" rows="6" cols="80" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="form-group">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Active checkbox</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Active checkbox</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" disabled>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Disabled checkbox</span>
+            </label>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="form-group">
+            <label class="custom-control custom-radio">
+              <input type="radio" name="radio" value="active" class="custom-control-input" checked>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Active radio</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="custom-control custom-radio">
+              <input type="radio" name="radio" value="inactive" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Inactive radio</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label class="custom-control custom-radio">
+              <input type="radio" name="radio" value="disabled" class="custom-control-input" disabled>
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Disabled radio</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="progress" class="mb-3">
+        <div class="display-4">
+          Progress Bars
+        </div>
+
+        <div class="row demo-row">
+          <div class="col-xs-12">
+            <progress class="progress progress-success" value="25" max="100"></progress>
+            <progress class="progress progress-info" value="50" max="100"></progress>
+            <progress class="progress progress-warning" value="75" max="100"></progress>
+            <progress class="progress progress-danger" value="100" max="100"></progress>
+          </div> <!-- /sliders -->
+        </div>
+      </div>
+
+      <div id="typography" class="mb-3">
+        <div class="display-4">
+          Typography
+        </div>
+        <div class="lead mt-1 mb-1">
+          This is a .lead paragraph, and will be slightly larger and thinner than normal type.
+        </div>
+        <div class="demo-row typography-row">
+        	<div class="demo-content">
+        		<div class="demo-type-example">
+  	      		<h1><span class="demo-heading-note">Header 1</span>Showers across the W</h1>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<h2><span class="demo-heading-note">Header 2</span>Give this quartet a few</h2>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<h3><span class="demo-heading-note">Header 3</span>The Vatican transitions to a</h3>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<h4><span class="demo-heading-note">Header 4</span>Great American Bites: Telluride's Oak, The</h4>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<h5><span class="demo-heading-note">Header 5</span>Author Diane Alberts loves her some good</h5>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<h6><span class="demo-heading-note">Header 6</span>With the success of young-adult book-to-movie</h6>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<span class="demo-text-note">Paragraph</span>
+  	          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <strong>Donec ullamcorper</strong> nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<span class="demo-text-note">Lead Text</span>
+  						<p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<span class="demo-text-note">Quote</span>
+  	          <blockquote>
+  	            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus.</p>
+  	            <small>Steve Jobs, CEO Apple</small>
+  	          </blockquote>
+        		</div>
+        		<div class="demo-type-example">
+  	      		<span class="demo-text-note">Small Font</span>
+  	          <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small></p>
+        		</div>
+        	</div><!-- /.demo-content-wide -->
+        </div><!-- /.demo-row -->
+      </div>
+    </div>
+  </div>
+</div>

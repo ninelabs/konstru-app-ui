@@ -1,0 +1,34 @@
+.form-control {
+  color: $color-slate;
+  border-color: fadeout($color-slate, 0.2);
+
+  @include placeholder {
+    color: fade-out($color-slate, 0.5);
+  }
+
+  &:focus {
+    border-color: $color-slate;
+    box-shadow: rgba($color-slate, 0.2) 0 0 0 3px;
+  }
+
+  &:disabled {
+    background: #f8f8f8;
+    color: $gray-light;
+  }
+}
+
+.has-success {
+  @include form-control-validation(darken($color-green, 20%), $color-green);
+}
+
+.has-error {
+  @include form-control-validation($color-red, $color-red);
+}
+
+.custom-control-input:checked ~ .custom-control-indicator {
+  background-color: $color-green;
+}
+
+textarea {
+  resize: none;
+}

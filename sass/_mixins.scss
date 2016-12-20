@@ -1,0 +1,87 @@
+@mixin button-variant($color, $background, $bottom: darken($background, 4%), $border: darken($bottom, 5%), $active: darken($background, 10%)) {
+  color: $color;
+  border: 1px solid $border;
+  background: $background linear-gradient(lighten($background, 5%), $bottom);
+  box-shadow: #E9EAEB 0 1px 0;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background: darken($background, 4%) linear-gradient($background, darken($background, 4%));
+  }
+  &:hover {
+    color: $color;
+    background: darken($background, 4%) linear-gradient($background, darken($background, 10%));
+    border-color: darken($border, 5%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background: $active  linear-gradient($active, lighten($active, 4%));
+    border-color: darken($border, 10%);
+    box-shadow: #E9EAEB 0 1px 0, inset darken($active, 10%) 0 1px 2px;
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: $active;
+      border-color: darken($border, 10%);
+    }
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: $background;
+    color: fade($color, 75%);
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin form-control-validation($text, $border) {
+  .help-block,
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline {
+    color: $text;
+  }
+  // Set the border and box shadow on specific inputs to match
+  .form-control {
+    color: $text;
+    border-color: $border;
+    box-shadow: inset $border 0 0 0 1px;
+
+    @include placeholder {
+      color: fade-out($text, 0.5);
+    }
+
+    &:focus {
+      border-color: $border;
+      box-shadow: inset $border 0 0 0 1px, rgba($border, 0.2) 0 0 0 3px;
+    }
+  }
+  // Set validation states also for addons
+  .input-group-addon {
+    color: $text;
+    border-color: $border;
+    background-color: #fff;
+  }
+  .form-control-feedback {
+    color: $text;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

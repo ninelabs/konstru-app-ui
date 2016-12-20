@@ -1,0 +1,21 @@
+.demo-row {
+  padding-bottom: 1rem;
+}
+
+.demo-row.typography-row .demo-type-example {
+  padding-left: 15%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.demo-row .demo-heading-note,
+.demo-row .demo-text-note {
+  display: block;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.86rem;
+  color: #c0c1c2;
+  font-weight: 400;
+}

@@ -1,4 +1,9 @@
-body {
-  background-color: #f8f8f8;
-  color: #555;
-}
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap-flex";
+
+@import "mixins";
+@import "theme/buttons";
+@import "theme/colors";
+@import "theme/forms";
+@import "theme/typography";
+@import "theme/select";

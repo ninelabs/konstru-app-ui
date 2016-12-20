@@ -2,13 +2,11 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var sassMiddleware = require('node-sass-middleware');
-var mustacheExpress = require('mustache-express');
+var exphbs  = require('express-handlebars');
 
-app.engine('mustache', mustacheExpress());
+app.engine('handlebars', exphbs({defaultLayout: 'layout'}));
 
-app.set('view engine', 'mustache');
-app.set('views', __dirname + '/views');
-app.set("layout", "layouts/layout");
+app.set('view engine', 'handlebars');
 
 app.use(
   sassMiddleware({
@@ -21,10 +19,16 @@ app.use(
 );
 
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 app.get('/', function (req, res) {
   res.render('index');
 });
+
+app.get('/components', function (req, res) {
+  res.render('components/index');
+});
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
