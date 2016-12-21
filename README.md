@@ -5,7 +5,7 @@ This repo holds a development platform for the Konstru Web UI project. There wil
 ## Getting Started
 
 ```bash
-git clone https://github.com/orderedlist/konstru-theme
+git clone https://github.com/ninelabs/konstru-theme
 cd konstru-theme
 npm install
 npm start
