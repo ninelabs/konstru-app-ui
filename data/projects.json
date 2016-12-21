@@ -1,12 +1,13 @@
 [
   {
-    "name": "Met Life Stadium",
-    "description": "",
+    "name": "I mean, this Stadium is the best",
+    "description": "This project is amazing, and here's why. You're gonna dig it.",
     "models_count": 3,
     "updated_at": "2016-12-20T15:10:52.376Z",
     "updated_by": 1,
     "image": "projects/metlife.jpg",
-    "users": [1,2]
+    "users": [1,2],
+    "slug": "stadium-best"
   },
   {
     "name": "Superdome",

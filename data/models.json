@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Master Model",
+    "description": "A description of the model. ",
+    "image": "projects/metlife.jpg",
+    "changes": [
+      {
+        "user": 1,
+        "updated_at": "2016-12-16T15:10:52.376Z"
+      },
+      {
+        "user": 2,
+        "updated_at": "2016-12-16T18:10:52.376Z"
+      },
+      {
+        "user": 1,
+        "updated_at": "2016-12-18T15:10:52.376Z"
+      },
+      {
+        "user": 3,
+        "updated_at": "2016-12-20T15:10:52.376Z"
+      },
+      {
+        "user": 1,
+        "updated_at": "2016-12-21T15:10:52.376Z"
+      }
+    ]
+  }
+]
