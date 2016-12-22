@@ -1,0 +1,14 @@
+.icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: fade-out($color-slate, 0.5);
+  display: inline-block;
+  position: relative;
+  top: -2px;
+
+  &-small {
+    width: 0.825rem;
+    height: 0.825rem;
+  }
+}
