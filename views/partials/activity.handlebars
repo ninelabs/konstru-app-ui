@@ -1,0 +1,42 @@
+<div class="activity-stream-item">
+  <div class="activity-stream-timeago text-muted">
+    {{timeago created_at}}
+  </div>
+  <div class="activity-stream-avatar">
+    <div class="avatar">
+      <img src="{{userAvatar user}}" alt="{{userName user}}" />
+    </div>
+  </div>
+
+  <div class="activity-stream-body">
+    <div class="activity-stream-title">
+      {{userName user}}
+      {{#if merge}}
+        merged changes from <strong>{{title}}</strong> into
+        <strong>Project Name</strong> {{icon 'right-open' 'icon-small'}} <strong>Model Name</strong></span>
+      {{else}}
+        uploaded <strong>{{title}}</strong> to
+        <strong>Project Name</strong> {{icon 'right-open' 'icon-small'}} <strong>Model Name</strong></span>
+      {{/if}}
+    </div>
+
+    <div class="card">
+      <div class="activity-stream-image rounded-top" style="background-image:url('/images/versions/{{image}}')">
+      </div>
+      <div class="card-block stats">
+        <div class="stats-graph">
+          <div class="stats-graph-item additions bg-success" style="width:{{ statPercent diffstat 'additions' }}%;"></div>
+          <div class="stats-graph-item deletions bg-danger" style="width:{{ statPercent diffstat 'deletions' }}%;"></div>
+          <div class="stats-graph-item updated bg-warning" style="width:{{ statPercent diffstat 'updates' }}%;"></div>
+          <div class="stats-graph-item unchanged bg-faded" style="width:{{ statPercent diffstat 'unchanged' }}%;"></div>
+        </div>
+        <div class="stats-text">
+          <span class="text-success"><strong>{{diffstat.additions}}</strong> additions</span>
+          <span class="text-danger"><strong>{{diffstat.deletions}}</strong> deletions</span>
+          <span class="text-warning"><strong>{{diffstat.updates}}</strong> updates</span>
+          <span class="text-muted"><strong>{{diffstat.unchanged}}</strong> unchanged</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

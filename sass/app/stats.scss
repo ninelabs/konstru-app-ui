@@ -1,0 +1,36 @@
+.stats {
+  height: 2.65rem;
+  overflow: hidden;
+  cursor: default;
+
+  &-graph {
+    border-radius: 3px;
+    overflow: hidden;
+    height: 1rem;
+    margin: 0.25rem 0;
+    transition: margin-top 0.2s ease;
+
+    &-item {
+      float: left;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 1rem;
+    }
+  }
+
+  &-text {
+    padding: 0.35rem 0;
+    text-align: center;
+
+    span {
+      margin: 0 0.4rem;
+    }
+  }
+
+  &:hover {
+    .stats-graph {
+      margin-top: -1.6rem;
+    }
+  }
+}
