@@ -1,0 +1,77 @@
+@import "../variables";
+
+.activity-stream {
+  display: table;
+  border-collapse: collapse;
+  margin-left: 1rem;
+
+  &-item {
+    display: table-row;
+
+    > * {
+      display: table-cell;
+    }
+
+    &:last-child {
+      .activity-stream-body {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &-timeago {
+    width: 1px;
+    white-space: nowrap;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    vertical-align: top;
+    text-align: right;
+    font-size: 0.825rem;
+  }
+
+  &-avatar {
+    width: 24px;
+    padding-right: 1rem;
+    vertical-align: top;
+  }
+
+  &-body {
+    padding-bottom: 2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 48px;
+      bottom: 10px;
+      left: -36px;
+      width: 4px;
+      border-radius: 2px;
+      background: $border-color;
+    }
+  }
+
+  &-title {
+    padding-top: 0.45rem;
+    padding-bottom: 1.2rem;
+    vertical-align: middle;
+  }
+
+  &-image {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: inset $border-color 0 -1px 0;
+    }
+  }
+}
