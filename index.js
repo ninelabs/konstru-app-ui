@@ -5,6 +5,7 @@ const sassMiddleware = require('node-sass-middleware');
 const exphbs = require('express-handlebars');
 const prototypeData = require('./lib/prototype_data.js');
 const helpers = require('./lib/helpers')(prototypeData);
+const icons = require('./lib/icons');
 
 app.engine('handlebars', exphbs.create({ helpers: helpers, defaultLayout: 'layout'}).engine);
 
@@ -28,7 +29,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/components', function (req, res) {
-  res.render('components/index');
+  res.render('components/index', {icons: icons});
 });
 
 app.get('/prototype/:page', function(req, res) {

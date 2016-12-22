@@ -322,6 +322,21 @@
           </div>
         </div>
       </div>
+      <div id="icons" class="mb3">
+        <div class="display-4">
+          Icons
+        </div>
+        <div class="lead mb-2">
+          These icons are included as SVGs in the project, and can be used by xlink.
+        </div>
+        <div class="icons-list">
+          {{#each icons}}
+            <div class="icon-container" data-toggle="tooltip" data-placement="top" title="{{this}}">
+              {{icon this}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
       <div id="navbar" class="mb-3">
         <div class="display-4">
           Navbar
