@@ -23,6 +23,7 @@ app.use(
 
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
 app.get('/', function (req, res) {
   res.render('index');
