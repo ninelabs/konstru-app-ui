@@ -9,8 +9,10 @@
         <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
         <li class="nav-item"><a class="nav-link" href="#icons">Icons</a></li>
         <li class="nav-item"><a class="nav-link" href="#navbar">Navbar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nav">Tabbed Nav</a></li>
         <li class="nav-item"><a class="nav-link" href="#progress">Progress Bars</a></li>
         <li class="nav-item"><a class="nav-link" href="#typography">Typography</a></li>
+        <li class="nav-item"><a class="nav-link" href="#konstru">Konstru App</a></li>
       </ul>
     </div>
     <div class="col-md-10">
@@ -347,6 +349,47 @@
         </div>
         {{> nav dashboard_class='active'}}
       </div>
+
+      <div id="nav" class="mb-3">
+        <div class="display-4">
+          Tabbed Nav
+        </div>
+        <div class="lead">
+          Tabbed navigation and tab panels within the app.
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#tab1" class="nav-link active" data-toggle="tab">
+              Models
+              <span class="tag tag-pill tag-default">
+                3
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab2" data-toggle="tab">
+              Compare &amp; Merge
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tab3" data-toggle="tab">
+              Settings
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="tab1">
+            Tab 1 Content
+          </div>
+          <div class="tab-pane fade in" id="tab2">
+            Tab 2 Content
+          </div>
+          <div class="tab-pane fade in" id="tab3">
+            Tab 3 Content
+          </div>
+        </div>
+      </div>
+
       <div id="progress" class="mb-3">
         <div class="display-4">
           Progress Bars
@@ -411,6 +454,35 @@
         	</div><!-- /.demo-content-wide -->
         </div><!-- /.demo-row -->
       </div>
+
+      <div id="konstru" class="mb-3">
+        <div class="display-4">
+          Konstru App
+        </div>
+        <div class="lead mt-1 mb-1">
+          Various non-bootstrap, Konstru-specific components used in the app.
+        </div>
+        <div class="row demo-row">
+          <div class="col-xs-4 text-muted">
+            Avatars
+          </div>
+          <div class="col-xs-8">
+            {{> avatar user=1}}
+            {{> avatar user=1 class='avatar-small'}}
+          </div>
+        </div>
+
+        <div class="row demo-row">
+          <div class="col-xs-4 text-muted">
+            Change Graph
+          </div>
+          <div class="col-xs-8">
+            {{> change-graph prototypeData.models.[0].changes}}
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 </div>

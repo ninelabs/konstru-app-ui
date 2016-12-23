@@ -1,0 +1,36 @@
+<div href="/prototype/project" class="link-unstyled card media model-preview p-1 mb-1 mt-1">
+    <div class="media-left">
+      <figure
+        class="model-thumbnail rounded m-0 h-100"
+        style="background-image:url('/images/{{image}}')">
+        {{#if this.copies}}
+        <span class="tag tag-pill tag-default">
+            {{this.copies.length}} copies
+        </span>
+        {{/if}}
+      </figure>
+    </div>
+    <div class="media-body">
+
+      <div class="row">
+        <div class="col-xs-6">
+          <h4 class="media-heading">{{ name }}</h4>
+        </div>
+        <div class="col-xs-6 text-xs-right small text-muted">
+          <div class="model-preview-meta">
+            {{#each changes}}
+              {{#if @last}}
+                Updated <time title="{{readableDate this.updated_at}}">{{timeago this.updated_at}}</time> by {{userName this.user}}
+              {{/if}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+      <p class="text-muted">{{ description }}</p>
+
+      <div class="model-change-graph mt-1">
+        {{> change-graph changes }}
+      </div>
+    </div>
+</div>

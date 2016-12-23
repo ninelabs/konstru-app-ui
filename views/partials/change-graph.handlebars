@@ -1,0 +1,11 @@
+<div class="change-graph">
+  <ul>
+    {{#each this}}
+      <li style="left: {{changeGraphXPercent this .. }}%;">{{> avatar user=this.user class='avatar-small'}}</li>
+    {{/each}}
+    <span class="change-graph-timeline" style="left: {{changeGraphXPercent this.[0] this }}%;"></span>
+  </ul>
+  <strong class="change-graph-versions pl-1">
+    {{this.length}} versions
+  </strong>
+</div>

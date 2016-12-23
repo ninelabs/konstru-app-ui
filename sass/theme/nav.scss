@@ -1,3 +1,32 @@
-.nav-underline{
-  
+.nav-tabs{
+  .nav-item + .nav-item{
+    margin-left: 0;
+  }
+  .nav-link{
+
+    border-width: 0 0 4px 0;
+    color: inherit;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    margin-right: 2em;
+
+    &:hover{
+      border-color: transparent transparent $nav-tabs-link-hover-border-color transparent;
+      border-width: 0 0 4px 0;
+    }
+
+    &.active{
+      &, &:hover{
+        border-color: transparent transparent $nav-tabs-active-link-hover-border-color transparent !important;
+        border-width: 0 0 4px 0 !important;
+      }
+    }
+
+    .tag-pill{
+      background: transparent;
+      border: 1px solid $gray-lightest;
+      color: inherit;
+      font-weight: inherit;
+    }
+  }
 }

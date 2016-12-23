@@ -2,6 +2,53 @@
 
 {{> nav projects_class='active'}}
 
+<<<<<<< Updated upstream
 <!-- {{> project-header prototypeData.projects.[0]}} -->
 
 {{>footer}}
+=======
+{{> project-header prototypeData.projects.[0]}}
+
+<div class="container-fliud p-1 tab-content">
+
+    <div class="tab-pane fade in active" id="project-models">
+
+      <div class="row row-wrap">
+        <div class="col-xs-4">
+          <div class="form-group">
+            <input type="text" value="" placeholder="Filter&hellip;" class="form-control">
+          </div>
+        </div>
+        <div class="col-xs-4 offset-xs-4 text-xs-right">
+          <div class="form-group">
+            <button class="btn btn-primary">Add a Model</button>
+          </div>
+        </div>
+      </div>
+      <ul class="model-list media-list">
+        {{#each prototypeData.models}}
+          <li>
+            {{> model this}}
+            {{#if this.copies }}
+              <ul class="model-list media-list ml-2 pl-2">
+                {{#each this.copies}}
+                  <li>
+                    {{> model this}}
+                  </li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>
+
+    <div class="tab-pane fade" id="project-merge">Default 2</div>
+
+    <div class="tab-pane fade" id="project-settings">Default 3</div>
+
+
+
+</div>
+>>>>>>> Stashed changes

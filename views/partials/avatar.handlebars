@@ -1,0 +1,9 @@
+<div class="avatar {{class}}">
+  {{#if (userAvatar user)}}
+    <img src="{{userAvatar user}}" alt="{{userName user}}" title="{{userName user}}" data-toggle="tooltip"/>
+  {{else}}
+    <abbr title="{{userName user}}" data-toggle="tooltip">
+      {{userInitials user}}
+    </abbr>
+  {{/if}}
+</div>
