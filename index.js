@@ -30,13 +30,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/components', function (req, res) {
-<<<<<<< Updated upstream
-  res.render('components/index', {icons: icons});
-=======
   res.render('components/index',{
+    icons: icons,
     prototypeData: prototypeData
   });
->>>>>>> Stashed changes
 });
 
 app.get('/prototype/:page', function(req, res) {
