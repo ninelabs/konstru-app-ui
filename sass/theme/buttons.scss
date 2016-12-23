@@ -50,6 +50,14 @@
   }
 }
 
+.btn-favorite{
+  &.active{
+    .icon{
+      fill: $color-yellow;
+    }
+  }
+}
+
 .dropdown-toggle {
   &::after {
     border: none;

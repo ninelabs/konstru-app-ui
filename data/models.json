@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Master Model",
     "description": "A description of the model. ",
     "image": "projects/metlife.jpg",
@@ -21,8 +22,46 @@
         "updated_at": "2016-12-20T15:10:52.376Z"
       },
       {
-        "user": 1,
+        "user": 4,
         "updated_at": "2016-12-21T15:10:52.376Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Roof Structure",
+    "description": "A description for the roof structure. ",
+    "image": "projects/att.jpg",
+    "copies": [
+      {
+        "id": 3,
+        "name": "AT&T Building",
+        "description": "A description for the roof structure. ",
+        "image": "projects/att.jpg",
+        "changes": [
+          {
+            "user": 4,
+            "updated_at": "2016-12-16T15:10:52.376Z"
+          },
+          {
+            "user": 3,
+            "updated_at": "2016-12-22T15:10:52.376Z"
+          }
+        ]
+      }
+    ],
+    "changes": [
+      {
+        "user": 1,
+        "updated_at": "2016-12-16T15:10:52.376Z"
+      },
+      {
+        "user": 2,
+        "updated_at": "2016-12-19T18:10:52.376Z"
+      },
+      {
+        "user": 1,
+        "updated_at": "2016-12-22T15:10:52.376Z"
       }
     ]
   }

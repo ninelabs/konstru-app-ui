@@ -1,0 +1,44 @@
+.model{
+
+  &-list{
+    .media-left{
+      width: 20%;
+      min-width: 120px;
+    }
+
+    .model-list{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        border-left: 4px solid $gray-lightest;
+      }
+    }
+  }
+
+  &-preview{
+
+  }
+
+  &-preview-meta{
+    line-height: 1.2;
+  }
+
+  &-thumbnail{
+    width: 100%;
+    padding-bottom: 56.25%; //16x9 aspect
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .tag{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}

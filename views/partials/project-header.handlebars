@@ -1,31 +1,26 @@
-<header class="project-header pt-2">
-
-  <div class="container">
-
+<header class="project-header pt-2 mb-1">
+  <div class="container-fluid">
     <h2>{{name}}</h2>
     <p class="text-muted">{{description}}</p>
-
-    <ul class="nav nav-tabs nav-underline">
-      <li class="nav-item">
-        <a href="/prototype/project" class="nav-link active">
-          Models
-          <span class="project-model-count tag tag-pill tag-default">
-            {{models_count}}
-          </span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/prototype/project/compare">
-          Compare &amp; Merge
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/prototype/project/settings">
-          Settings
-        </a>
-      </li>
-    </ul>
-
   </div>
-
+  <ul class="nav nav-tabs container-fluid">
+    <li class="nav-item">
+      <a href="#project-models" class="nav-link active" data-toggle="tab">
+        Models
+        <span class="project-model-count tag tag-pill tag-default">
+          {{models_count}}
+        </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#project-merge" data-toggle="tab">
+        Compare &amp; Merge
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#project-settings" data-toggle="tab">
+        Settings
+      </a>
+    </li>
+  </ul>
 </header>

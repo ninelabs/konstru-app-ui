@@ -7,6 +7,9 @@
   position: relative;
   width: 36px;
   height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: $gray-lightest;
 
   &::after {
     content: "";
@@ -24,8 +27,16 @@
     float: left; // Remove padding added by some browsers
   }
 
+  abbr{
+    text-decoration: none;
+    font-weight: bold;
+    border:0;
+  }
+
   &-small {
     width: 24px;
     height: 24px;
+    line-height: 24px;
+    font-size: 0.9em;
   }
 }

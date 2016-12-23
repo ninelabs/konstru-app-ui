@@ -30,7 +30,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/components', function (req, res) {
-  res.render('components/index', {icons: icons});
+  res.render('components/index',{
+    icons: icons,
+    prototypeData: prototypeData
+  });
 });
 
 app.get('/prototype/:page', function(req, res) {
