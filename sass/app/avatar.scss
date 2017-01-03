@@ -1,42 +1,44 @@
+/* stylelint-disable selector-no-type */
+
 @import "../variables";
 
 .avatar {
-  overflow: hidden;
-  display: inline-block;
-  border-radius: 3px;
   position: relative;
+  display: inline-block;
   width: 36px;
   height: 36px;
+  overflow: hidden;
   line-height: 36px;
   text-align: center;
   background: $gray-lightest;
+  border-radius: 3px;
 
   &::after {
-    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    content: "";
     box-shadow: inset $border-color 0 0 0 1px;
   }
 
   img {
+    float: left; // Remove padding added by some browsers
     width: 100%;
     height: 100%;
-    float: left; // Remove padding added by some browsers
   }
 
-  abbr{
-    text-decoration: none;
+  abbr {
     font-weight: bold;
-    border:0;
+    text-decoration: none;
+    border: 0;
   }
 
   &-small {
     width: 24px;
     height: 24px;
-    line-height: 24px;
     font-size: 0.9em;
+    line-height: 24px;
   }
 }

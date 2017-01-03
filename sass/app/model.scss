@@ -1,41 +1,37 @@
-.model{
-
-  &-list{
-    .media-left{
+.model {
+  &-list {
+    .media-left {
       width: 20%;
       min-width: 120px;
     }
 
-    .model-list{
+    .model-list {
       position: relative;
-      &:before{
-        content: '';
+
+      &::before {
         position: absolute;
-        left: 0;
         top: 0;
         bottom: 0;
+        left: 0;
         width: 4px;
+        content: "";
         border-left: 4px solid $gray-lightest;
       }
     }
   }
 
-  &-preview{
-
-  }
-
-  &-preview-meta{
+  &-preview-meta {
     line-height: 1.2;
   }
 
-  &-thumbnail{
+  &-thumbnail {
+    position: relative;
     width: 100%;
     padding-bottom: 56.25%; //16x9 aspect
-    background-size: cover;
     background-position: center;
-    position: relative;
+    background-size: cover;
 
-    .tag{
+    .tag {
       position: absolute;
       right: 10px;
       bottom: 10px;

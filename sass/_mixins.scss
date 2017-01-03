@@ -1,13 +1,15 @@
+/* stylelint-disable selector-no-qualifying-type, selector-no-type */
+
 @mixin button-variant($color, $background, $bottom: darken($background, 4%), $border: darken($bottom, 5%), $active: darken($background, 10%)) {
   color: $color;
-  border: 1px solid $border;
   background: $background linear-gradient(lighten($background, 5%), $bottom);
-  box-shadow: #E9EAEB 0 1px 0;
+  border: 1px solid $border;
+  box-shadow: #e9eaeb 0 1px 0;
 
   .text-muted {
+    font-weight: 400;
     color: fade-out($color, 0.3) !important;
     opacity: 0.6;
-    font-weight: 400;
   }
 
   &:focus,
@@ -15,18 +17,21 @@
     color: $color;
     background: darken($background, 4%) linear-gradient($background, darken($background, 4%));
   }
+
   &:hover {
     color: $color;
     background: darken($background, 4%) linear-gradient($background, darken($background, 10%));
     border-color: darken($border, 5%);
   }
+
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
     background: $active  linear-gradient($active, lighten($active, 4%));
     border-color: darken($border, 10%);
-    box-shadow: #E9EAEB 0 1px 0, inset darken($active, 10%) 0 1px 2px;
+    box-shadow: #e9eaeb 0 1px 0, inset darken($active, 10%) 0 1px 2px;
+
     &:hover,
     &:focus,
     &.focus {
@@ -35,13 +40,14 @@
       border-color: darken($border, 10%);
     }
   }
+
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    background-color: $background;
     color: fade($color, 75%);
-    opacity: 0.7;
     cursor: not-allowed;
+    background-color: $background;
+    opacity: 0.7;
   }
 
   .badge {
@@ -50,8 +56,8 @@
   }
 
   .icon {
-    fill: $color;
     margin-right: 0.2rem;
+    fill: $color;
   }
 }
 
@@ -82,20 +88,33 @@
   // Set validation states also for addons
   .input-group-addon {
     color: $text;
-    border-color: $border;
     background-color: #fff;
+    border-color: $border;
   }
+
   .form-control-feedback {
     color: $text;
   }
+
   .icon use {
     fill: $text;
   }
 }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
