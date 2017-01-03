@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const sassMiddleware = require('node-sass-middleware');
 const exphbs = require('express-handlebars');
+const clone = require('clone');
 const prototypeData = require('./lib/prototype_data.js');
 const helpers = require('./lib/helpers')(prototypeData);
 const icons = require('./lib/icons');
@@ -39,7 +40,8 @@ app.get('/components', function (req, res) {
 app.get('/prototype/:page', function(req, res) {
   res.render('prototype/' + req.params.page, {
     layout: 'prototype',
-    prototypeData: prototypeData
+    // Clone to prevent sorting in handlebars from altering the original object
+    prototypeData: clone(prototypeData)
   });
 });
 

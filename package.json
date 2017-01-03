@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5",
+    "clone": "^2.1.0",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "handlebars-helpers": "^0.7.5",
