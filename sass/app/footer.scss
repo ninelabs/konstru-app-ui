@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-type */
+
 /*
 The html & body styles are to maintain a footer at the bottom of the window, but
 not fixed, so it will scroll with the content.
@@ -10,8 +12,8 @@ html {
 
 body {
   position: relative;
-  padding-bottom: 6rem;
   min-height: 100%;
+  padding-bottom: 6rem;
 }
 
 .footer {
@@ -19,9 +21,9 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 2rem 0;
   background: #fff;
   border-top: 1px solid $border-color;
-  padding: 2rem 0;
 
   &-link {
     margin-right: 1rem;

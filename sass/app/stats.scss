@@ -1,21 +1,23 @@
+/* stylelint-disable selector-no-type */
+
 .stats {
   height: 2.65rem;
   overflow: hidden;
   cursor: default;
 
   &-graph {
-    border-radius: 3px;
-    overflow: hidden;
     height: 1rem;
     margin: 0.25rem 0;
+    overflow: hidden;
+    border-radius: 3px;
     transition: margin-top 0.2s ease;
 
     &-item {
-      float: left;
       display: block;
+      float: left;
+      height: 1rem;
       overflow: hidden;
       white-space: nowrap;
-      height: 1rem;
     }
   }
 

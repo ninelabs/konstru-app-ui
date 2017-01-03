@@ -1,32 +1,39 @@
-.nav-tabs{
-  .nav-item + .nav-item{
+.nav-tabs {
+  width: 100%;
+
+  .nav-item + .nav-item {
     margin-left: 0;
   }
-  .nav-link{
 
-    border-width: 0 0 4px 0;
-    color: inherit;
-    padding-left: 0.25em;
+  .nav-link {
     padding-right: 0.25em;
+    padding-left: 0.25em;
     margin-right: 2em;
+    color: inherit;
+    border-width: 0 0 4px;
 
-    &:hover{
+    &:hover {
       border-color: transparent transparent $nav-tabs-link-hover-border-color transparent;
-      border-width: 0 0 4px 0;
+      border-width: 0 0 4px;
     }
 
-    &.active{
-      &, &:hover{
+    &.active {
+      &,
+      &:hover {
         border-color: transparent transparent $nav-tabs-active-link-hover-border-color transparent !important;
-        border-width: 0 0 4px 0 !important;
+        border-width: 0 0 4px !important;
       }
     }
 
-    .tag-pill{
+    .tag-pill {
+      position: relative;
+      display: inline-block;
+      margin-left: 0.2rem;
+      font-size: 0.75rem;
+      font-weight: inherit;
+      color: inherit;
       background: transparent;
       border: 1px solid $gray-lightest;
-      color: inherit;
-      font-weight: inherit;
     }
   }
 }

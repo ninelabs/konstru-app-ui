@@ -2,8 +2,8 @@
 
 .activity-stream {
   display: table;
-  border-collapse: collapse;
   margin-left: 1rem;
+  border-collapse: collapse;
 
   &-item {
     display: table-row;
@@ -21,12 +21,12 @@
 
   &-timeago {
     width: 1px;
-    white-space: nowrap;
     padding-top: 0.5rem;
     padding-right: 1rem;
-    vertical-align: top;
-    text-align: right;
     font-size: 0.825rem;
+    text-align: right;
+    white-space: nowrap;
+    vertical-align: top;
   }
 
   &-avatar {
@@ -36,18 +36,18 @@
   }
 
   &-body {
-    padding-bottom: 2rem;
     position: relative;
+    padding-bottom: 2rem;
 
     &::before {
-      content: "";
       position: absolute;
       top: 48px;
       bottom: 10px;
       left: -36px;
       width: 4px;
-      border-radius: 2px;
+      content: "";
       background: $border-color;
+      border-radius: 2px;
     }
   }
 
@@ -61,16 +61,16 @@
     position: relative;
     width: 600px;
     height: 400px;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 
     &::after {
-      content: "";
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      content: "";
       box-shadow: inset $border-color 0 -1px 0;
     }
   }

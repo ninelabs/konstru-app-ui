@@ -1,3 +1,5 @@
+/* stylelint-disable selector-no-type */
+
 @import "../variables";
 
 .project {
@@ -7,34 +9,32 @@
   max-width: 480px;
 
   &-title {
-    margin-bottom: -.285rem;
+    margin-bottom: -0.285rem;
   }
 
   &-image {
     position: relative;
     height: 200px;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 
     img {
       width: 298px;
     }
 
     &::after {
-      content: "";
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      content: "";
       box-shadow: inset $border-color 0 1px 0, inset $border-color 0 -1px 0;
     }
   }
 
-  &-header{
-    background-color: white;
-
-
+  &-header {
+    background-color: "#fff";
   }
 
   .avatar {

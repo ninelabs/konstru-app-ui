@@ -1,9 +1,9 @@
 .form-control {
-  color: $color-slate;
-  border-color: fadeout($color-slate, 0.2);
-  // padding: 0.45rem 0.8rem 0.55rem;
-  box-shadow: #E9EAEB 0 1px 0;
   line-height: 1.3;
+  color: $color-slate;
+  resize: none;
+  border-color: fadeout($color-slate, 0.2);
+  box-shadow: #e9eaeb 0 1px 0;
 
   @include placeholder {
     color: fade-out($color-slate, 0.5);
@@ -15,8 +15,8 @@
   }
 
   &:disabled {
-    background: #f8f8f8;
     color: $gray-light;
+    background: #f8f8f8;
   }
 }
 
@@ -30,8 +30,4 @@
 
 .custom-control-input:checked ~ .custom-control-indicator {
   background-color: $color-green;
-}
-
-textarea {
-  resize: none;
 }
