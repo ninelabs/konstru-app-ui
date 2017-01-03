@@ -4,7 +4,9 @@
   "description": "Bootstrap Theme for Konstru",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "eslint": "eslint .",
+    "test": "npm run eslint; npm run stylelint"
   },
   "author": "",
   "license": "ISC",
@@ -13,10 +15,16 @@
     "clone": "^2.1.0",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.6",
     "handlebars-helpers": "^0.7.5",
     "helper-timeago": "^0.1.0",
     "node-sass": "^4.1.0",
     "node-sass-middleware": "^0.10.0",
     "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
   }
 }
