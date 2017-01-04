@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bootstrap Theme for Konstru",
   "main": "index.js",
+  "engines": {
+    "node": "7.3.0"
+  },
   "scripts": {
     "start": "nodemon index.js",
     "stylelint": "stylelint \"sass/**/*.scss\" -q --syntax scss",
