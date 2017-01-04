@@ -34,7 +34,13 @@
   }
 
   &-header {
-    background-color: "#fff";
+    background-color: #fff;
+  }
+
+  &-header-title {
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.1;
   }
 
   .avatar {
