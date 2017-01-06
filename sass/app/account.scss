@@ -1,0 +1,15 @@
+@import "../mixins";
+@import "../variables";
+
+.account {
+  max-width: 300px;
+
+  @include media-breakpoint-up("sm") {
+    width: 300px;
+  }
+
+  &-footer {
+    background: $body-bg;
+    border-top: 1px solid $border-color;
+  }
+}
