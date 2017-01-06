@@ -1,4 +1,6 @@
 /* stylelint-disable selector-no-qualifying-type, selector-no-type */
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 @mixin button-variant($color, $background, $bottom: darken($background, 4%), $border: darken($bottom, 5%), $active: darken($background, 10%)) {
   color: $color;
