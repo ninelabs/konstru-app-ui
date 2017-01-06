@@ -1,0 +1,16 @@
+<div class="stats expanded">
+  <div class="stats-graph m-0">
+    <div class="stats-graph-item additions bg-success small" style="width:{{ statPercent model.diffstat 'additions' }}%;">
+      {{model.diffstat.additions}} additions
+    </div>
+    <div class="stats-graph-item deletions bg-danger small" style="width:{{ statPercent model.diffstat 'deletions' }}%;">
+      {{model.diffstat.deletions}} deletions
+    </div>
+    <div class="stats-graph-item updated bg-warning small" style="width:{{ statPercent model.diffstat 'updates' }}%;">
+      {{model.diffstat.updates}} updates
+    </div>
+    <div class="stats-graph-item unchanged bg-faded small" style="width:{{ statPercent model.diffstat 'unchanged' }}%;">
+      {{model.diffstat.unchanged}} unchanged
+    </div>
+  </div>
+</div>

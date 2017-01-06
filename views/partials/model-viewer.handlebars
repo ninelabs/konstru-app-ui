@@ -1,0 +1,42 @@
+<div class="model-viewer">
+  <div class="model-viewer-tools p-1">
+    <button type="button" class="btn btn-secondary">
+      {{icon 'home' 'icon-small'}}
+    </button>
+    <span class="btn-group">
+      <button type="button" class="btn btn-secondary">
+        {{icon 'plus' 'icon-small'}}
+      </button>
+      <button type="button" class="btn btn-secondary">
+        {{icon 'minus' 'icon-small'}}
+      </button>
+    </span>
+
+    <div class="float-xs-right">
+      <button type="button" class="btn btn-secondary">
+        {{icon 'resize-full' 'icon-small'}}
+      </button>
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="model-render-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Render Options
+        </button>
+        <div class="dropdown-menu pt-0" aria-labelledby="model-render-options">
+          <a class="dropdown-item" href="#">
+            Render Option 1
+          </a>
+          <a class="dropdown-item" href="#">
+            Render Option 2
+          </a>
+          <a class="dropdown-item" href="#">
+            Render Option 3
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <figure
+    class="model-image w-100 h-100"
+    style="background-image:url('/images/{{model.image}}')">
+  </figure>
+</div>

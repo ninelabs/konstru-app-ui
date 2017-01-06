@@ -1,0 +1,19 @@
+<div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{> avatar user=user class='avatar-small'}}
+    Version {{model.changes.length}}
+  </button>
+  <div class="dropdown-menu pt-0 model-version-dropdown" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-item m-0 bg-faded">
+      <input type="text" value="" placeholder="Filter versions&hellip;" class="form-control form-control-sm">
+    </div>
+    <div class="dropdown-divider mt-0"></div>
+    {{#withSort model.changes "updated_at" reverse="true"}}
+      <a class="dropdown-item text-nowrap" href="#">
+        {{> avatar user=user class='avatar-small'}}
+        Version {{this.version}}
+        <span class="float-xs-right text-muted small">{{timeago this.updated_at}}</span>
+      </a>
+    {{/withSort}}
+  </div>
+</div>

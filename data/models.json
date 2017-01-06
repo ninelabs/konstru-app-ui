@@ -4,25 +4,37 @@
     "name": "Master Model",
     "description": "A description of the model. ",
     "image": "projects/metlife.jpg",
+    "url": "/prototype/model",
+    "diffstat": {
+      "additions": 16,
+      "deletions": 34,
+      "updates": 124,
+      "unchanged": 1245
+    },
     "changes": [
       {
         "user": 1,
+        "version": 1,
         "updated_at": "2016-12-16T15:10:52.376Z"
       },
       {
         "user": 2,
+        "version": 2,
         "updated_at": "2016-12-16T18:10:52.376Z"
       },
       {
         "user": 1,
+        "version": 3,
         "updated_at": "2016-12-18T15:10:52.376Z"
       },
       {
         "user": 3,
+        "version": 4,
         "updated_at": "2016-12-20T15:10:52.376Z"
       },
       {
         "user": 4,
+        "version": 5,
         "updated_at": "2016-12-21T15:10:52.376Z"
       }
     ]
@@ -32,12 +44,26 @@
     "name": "Roof Structure",
     "description": "A description for the roof structure. ",
     "image": "projects/att.jpg",
+    "url": "/prototype/model",
+    "diffstat": {
+      "additions": 16,
+      "deletions": 34,
+      "updates": 124,
+      "unchanged": 1245
+    },
     "copies": [
       {
         "id": 3,
         "name": "AT&T Building",
         "description": "A description for the roof structure. ",
         "image": "projects/att.jpg",
+        "url": "/prototype/model",
+        "diffstat": {
+          "additions": 16,
+          "deletions": 34,
+          "updates": 124,
+          "unchanged": 1245
+        },
         "changes": [
           {
             "user": 4,
@@ -53,14 +79,17 @@
     "changes": [
       {
         "user": 1,
+        "version": 1,
         "updated_at": "2016-12-16T15:10:52.376Z"
       },
       {
         "user": 2,
+        "version": 2,
         "updated_at": "2016-12-19T18:10:52.376Z"
       },
       {
         "user": 1,
+        "version": 3,
         "updated_at": "2016-12-22T15:10:52.376Z"
       }
     ]

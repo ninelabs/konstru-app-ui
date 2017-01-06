@@ -1,7 +1,6 @@
 /* stylelint-disable selector-no-type */
 
 .stats {
-  height: 2.65rem;
   overflow: hidden;
   cursor: default;
 
@@ -17,8 +16,17 @@
       float: left;
       height: 1rem;
       overflow: hidden;
+      line-height: 1rem;
+      text-indent: 0.25rem;
+      text-overflow: ellipsis;
       white-space: nowrap;
     }
+  }
+
+  .bg-danger,
+  .bg-success,
+  .bg-warning {
+    color: #fff;
   }
 
   &-text {
@@ -30,7 +38,8 @@
     }
   }
 
-  &:hover {
+  &.compact:hover {
+    height: 2.65rem;
     .stats-graph {
       margin-top: -1.6rem;
     }

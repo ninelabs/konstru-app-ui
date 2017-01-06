@@ -1,0 +1,41 @@
+<header class="project-header pt-2">
+  <div class="container-fluid">
+    <a href="{{project.url}}" class="text-muted"><strong>{{project.name}}</strong></a>
+    <h2 class="project-header-title">{{model.name}}</h2>
+    <p class="text-muted">{{model.description}}</p>
+  </div>
+  <ul class="nav navbar-nav nav-tabs container-fluid">
+    <li class="nav-item">
+      <a href="#model-visualize" class="nav-link active" data-toggle="tab">
+        Visualize
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#model-history" data-toggle="tab">
+        History
+        <span class="project-model-count tag tag-pill tag-default">
+          {{model.changes.length}}
+        </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#model-copies" data-toggle="tab">
+        Copies
+        <span class="project-model-count tag tag-pill tag-default">
+          {{model.copies.length}}
+        </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#model-settings" data-toggle="tab">
+        Settings
+      </a>
+    </li>
+    <li class="nav-item float-xs-right">
+      <form class="form-inline">
+        <button class="btn btn-secondary btn-sm">Copy this Model</button>
+      </form>
+    </li>
+  </ul>
+
+</header>

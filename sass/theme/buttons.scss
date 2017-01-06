@@ -4,6 +4,10 @@
   font-weight: 500;
   border-radius: 4px;
   transition: background 0.2s linear, border 0.1s linear, color 0.1s linear;
+
+  .avatar {
+    margin: -5px 0;
+  }
 }
 
 .btn-sm {
