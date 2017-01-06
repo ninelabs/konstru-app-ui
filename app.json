@@ -1,6 +1,7 @@
 {
   "name": "konstru-app-ui",
   "scripts": {
+    "postdeploy": "npm install"
   },
   "env": {
     "NODE_ENV": {
