@@ -1,20 +1,25 @@
-<nav class="navbar navbar-dark bg-inverse">
+<nav class="navbar navbar-dark navbar-toggleable-sm bg-inverse">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">{{ icon 'menu'}}</span>
+  </button>
   <a href="/" class="navbar-brand">
     <img src="/images/konstru.svg" alt="Konstru">
   </a>
-  <nav class="nav navbar-nav float-xs-left">
-    <a href="/prototype/dashboard" class="nav-item nav-link {{dashboard_class}}">Dashboard</a>
-    <a href="/prototype/projects" class="nav-item nav-link {{projects_class}}">Projects</a>
-    <a href="#" class="nav-item nav-link">Help</a>
-  </nav>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a href="/prototype/dashboard" class="nav-link {{dashboard_class}}">Dashboard</a>
+      <li class="nav-item"><a href="/prototype/projects" class="nav-link {{projects_class}}">Projects</a>
+      <li class="nav-item"><a href="#" class="nav-link">Help</a>
+    </ul>
 
-  <div class="float-xs-right">
-    <div class="btn-group">
-      <button data-toggle="dropdown" class="btn btn-link text-muted dropdown-toggle pr-0" type="button">Steve <span class="caret"></span></button>
-      <ul role="menu" class="dropdown-menu dropdown-menu-right">
-        <li><a href="#" class="dropdown-menu-link">Your profile</a></li>
-        <li><a href="#" class="dropdown-menu-link">Logout</a></li>
-      </ul>
+    <div class="my-0">
+      <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-link text-muted dropdown-toggle pr-0" type="button">Steve <span class="caret"></span></button>
+        <ul role="menu" class="dropdown-menu dropdown-menu-right">
+          <li><a href="#" class="dropdown-menu-link">Your profile</a></li>
+          <li><a href="#" class="dropdown-menu-link">Logout</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
