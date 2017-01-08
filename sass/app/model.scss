@@ -1,8 +1,7 @@
 .model {
   &-list {
     .media-left {
-      width: 20%;
-      min-width: 120px;
+      width: 170px;
     }
 
     .model-list {
@@ -18,6 +17,10 @@
         border-left: 4px solid $gray-lightest;
       }
     }
+  }
+
+  &-preview {
+    flex-direction: row;
   }
 
   &-preview-meta {
