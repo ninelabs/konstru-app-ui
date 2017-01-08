@@ -2,35 +2,41 @@
 
 {{> nav projects_class='active'}}
 
-<div class="container-fluid pt-1">
+<div class="container-fluid pt-3">
 
-  <div class="toolbar clearfix pb-1">
-    <div class="projects-filter input-group float-xs-left">
-      <div class="input-group-btn">
-        <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
-          Active projects <span class="caret"></span>
+  <div class="row pb-3">
+    <div class="col col-auto">
+      <div class="projects-filter input-group">
+        <div class="input-group-btn">
+          <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Active projects <span class="caret"></span>
+          </button>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#" class="dropdown-menu-link">Active projects</a></li>
+            <li><a href="#" class="dropdown-menu-link">Archived projects</a></li>
+          </ul>
+        </div>
+        <input type="text" name="" placeholder="Filter…" class="form-control">
+      </div>
+    </div>
+
+    <div class="col col-auto">
+      <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button">
+          <span class="text-muted">Sort by:</span> Name
+          <span class="caret"></span>
         </button>
         <ul role="menu" class="dropdown-menu">
-          <li><a href="#" class="dropdown-menu-link">Active projects</a></li>
-          <li><a href="#" class="dropdown-menu-link">Archived projects</a></li>
+          <li><a href="#" class="dropdown-menu-link">Name</a></li>
+          <li><a href="#" class="dropdown-menu-link">Recently updated</a></li>
+          <li><a href="#" class="dropdown-menu-link">Number of models</a></li>
         </ul>
       </div>
-      <input type="text" name="" placeholder="Filter…" class="form-control">
     </div>
 
-    <div class="btn-group float-xs-left">
-      <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button">
-        <span class="text-muted">Sort by:</span> Name
-        <span class="caret"></span>
-      </button>
-      <ul role="menu" class="dropdown-menu">
-        <li><a href="#" class="dropdown-menu-link">Name</a></li>
-        <li><a href="#" class="dropdown-menu-link">Recently updated</a></li>
-        <li><a href="#" class="dropdown-menu-link">Number of models</a></li>
-      </ul>
+    <div class="col text-right">
+      <a href="#" class="btn btn-success float-xs-right">{{icon 'plus' 'icon-small'}} Create a project</a>
     </div>
-
-    <a href="#" class="btn btn-success float-xs-right">{{icon 'plus' 'icon-small'}} Create a project</a>
   </div>
 
   <div class="row row-wrap">

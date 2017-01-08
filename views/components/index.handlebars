@@ -1,9 +1,9 @@
 <div class="container pb-3">
   <div class="row mt-3">
-    <div class="col-md-2 pt-2">
-      <a href="/"><img src="/images/logo.svg" width="140" class="mb-2" /></a>
-      <h6>Components</h6>
-      <ul class="nav nav-pills nav-stacked">
+    <div class="col-2 pt-2">
+      <a href="/"><img src="/images/logo.svg" width="140" /></a>
+      <h6 class="mt-3">Components</h6>
+      <ul class="nav nav-pills flex-column">
         <li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
         <li class="nav-item"><a class="nav-link" href="#colors">Colors</a></li>
         <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
@@ -15,7 +15,7 @@
         <li class="nav-item"><a class="nav-link" href="#konstru">Konstru App</a></li>
       </ul>
     </div>
-    <div class="col-md-10">
+    <div class="col-10">
       <div class="mb-3">
         <div id="buttons" class="display-4">
           Buttons
@@ -25,116 +25,122 @@
           one of the other options might be useful. Small buttons only when space is at a premium.
         </p>
 
-        <h5 class="mb-1">Normal Buttons</h5>
+        <h5 class="mb-3">Normal Buttons</h5>
 
-        <div class="row demo-row">
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-primary">Primary Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-warning">Warning Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-secondary">Secondary Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-danger">Danger Button</a>
-          </div>
-        </div> <!-- /row -->
+        <div class="container pr-0 pl-0">
+          <div class="row demo-row">
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-primary">Primary Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-warning">Warning Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-secondary">Secondary Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-danger">Danger Button</a>
+            </div>
+          </div> <!-- /row -->
 
-        <div class="row demo-row">
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-success">Success Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-inverse">Inverse Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-info">Info Button</a>
-          </div>
-          <div class="col-xs-3">
-            <a href="#fakelink" class="btn btn-block btn-secondary disabled">Disabled Button</a>
-          </div>
-        </div> <!-- /row -->
+          <div class="row demo-row">
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-success">Success Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-inverse">Inverse Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-info">Info Button</a>
+            </div>
+            <div class="col-3">
+              <a href="#fakelink" class="btn btn-block btn-secondary disabled">Disabled Button</a>
+            </div>
+          </div> <!-- /row -->
+        </div>
 
-        <h5 class="mb-1">Small Buttons</h5>
+        <h5 class="mb-3">Small Buttons</h5>
 
-        <div class="row demo-row">
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-primary">Primary</a>
+        <div class="container pr-0 pl-0">
+          <div class="row demo-row">
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-primary">Primary</a>
+            </div>
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-secondary">Secondary</a>
+            </div>
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-warning">Warning</a>
+            </div>
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-danger">Danger</a>
+            </div>
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-info">Info</a>
+            </div>
+            <div class="col-2">
+              <a href="#fakelink" class="btn btn-block btn-sm btn-inverse">Inverse</a>
+            </div>
           </div>
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-secondary">Secondary</a>
-          </div>
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-warning">Warning</a>
-          </div>
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-danger">Danger</a>
-          </div>
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-info">Info</a>
-          </div>
-          <div class="col-xs-2">
-            <a href="#fakelink" class="btn btn-block btn-sm btn-inverse">Inverse</a>
+
+          <div class="row demo-row">
+            <button type="button" class="btn btn-sm btn-link">This is a link button</button>
           </div>
         </div>
 
-        <div class="row demo-row">
-          <button type="button" class="btn btn-sm btn-link">This is a link button</button>
-        </div>
+        <h5 class="mb-3">Dropdowns &amp; Button Groups</h5>
 
-        <h5 class="mb-1">Dropdowns &amp; Button Groups</h5>
+        <div class="container pr-0 pl-0">
+          <div class="row">
+            <div class="col-3">
 
-        <div class="row">
-          <div class="col-xs-3">
-
-            <div class="btn-group">
-              <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button">Dropdown with list <span class="caret"></span></button>
-              <ul role="menu" class="dropdown-menu">
-                <li><a href="#" class="dropdown-menu-link">Action</a></li>
-                <li><a href="#" class="dropdown-menu-link">Another action</a></li>
-                <li><a href="#" class="dropdown-menu-link">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#" class="dropdown-menu-link">Separated link</a></li>
-              </ul>
-            </div><!-- /btn-group -->
-          </div>
-
-          <div class="col-xs-4">
-
-            <div class="btn-group">
-              <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button"><span class="text-muted">Select: </span>Dropdown with items <span class="caret"></span></button>
-              <div role="menu" class="dropdown-menu">
-                <div class="dropdown-menu-item">
-                  <h6 class="dropdown-menu-item-title">Menu Item 1</h6>
-                  <div class="text-muted">
-                    This is some menu item text
-                  </div>
-                </div>
-                <div class="dropdown-menu-item">
-                  <h6 class="dropdown-menu-item-title">Menu Item 2</h6>
-                  <div class="text-muted">
-                    This is some menu item text
-                  </div>
-                </div>
-                <div class="dropdown-menu-item">
-                  <h6 class="dropdown-menu-item-title">Menu Item 3</h6>
-                  <div class="text-muted">
-                    This is some menu item text
-                  </div>
-                </div>
-              </div>
-            </div><!-- /btn-group -->
-          </div> <!-- /.col-xs-3 -->
-
-          <div class="col-xs-5">
-            <div class="btn-group btn-group-justified" data-toggle="buttons">
               <div class="btn-group">
-                <button type="button" class="btn btn-secondary active">Option 1</button>
-              </div>
+                <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button">Dropdown with list <span class="caret"></span></button>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="#" class="dropdown-menu-link">Action</a></li>
+                  <li><a href="#" class="dropdown-menu-link">Another action</a></li>
+                  <li><a href="#" class="dropdown-menu-link">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#" class="dropdown-menu-link">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div>
+
+            <div class="col-4">
+
               <div class="btn-group">
-                <button type="button" class="btn btn-secondary">Option 2</button>
+                <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button"><span class="text-muted">Select: </span>Dropdown with items <span class="caret"></span></button>
+                <div role="menu" class="dropdown-menu">
+                  <div class="dropdown-menu-item">
+                    <h6 class="dropdown-menu-item-title">Menu Item 1</h6>
+                    <div class="text-muted">
+                      This is some menu item text
+                    </div>
+                  </div>
+                  <div class="dropdown-menu-item">
+                    <h6 class="dropdown-menu-item-title">Menu Item 2</h6>
+                    <div class="text-muted">
+                      This is some menu item text
+                    </div>
+                  </div>
+                  <div class="dropdown-menu-item">
+                    <h6 class="dropdown-menu-item-title">Menu Item 3</h6>
+                    <div class="text-muted">
+                      This is some menu item text
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /btn-group -->
+            </div> <!-- /.col-3 -->
+
+            <div class="col-5">
+              <div class="btn-group btn-group-justified" data-toggle="buttons">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary active">Option 1</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">Option 2</button>
+                </div>
               </div>
             </div>
           </div>
@@ -151,59 +157,60 @@
         <p class="lead">
           Use these text utilities to color text and backgrounds.
         </p>
+        <div class="container pr-0 pl-0">
+          <div class="row demo-row">
+            <div class="col-2">
+              Normal text
+            </div>
+            <div class="col-2">
+              <span class="text-success">.text-success</span>
+            </div>
+            <div class="col-2">
+              <span class="text-info">.text-info</span>
+            </div>
+            <div class="col-2">
+              <span class="text-warning">.text-warning</span>
+            </div>
+            <div class="col-2">
+              <span class="text-danger">.text-danger</span>
+            </div>
 
-        <div class="row demo-row">
-          <div class="col-xs-2">
-            Normal text
-          </div>
-          <div class="col-xs-2">
-            <span class="text-success">.text-success</span>
-          </div>
-          <div class="col-xs-2">
-            <span class="text-info">.text-info</span>
-          </div>
-          <div class="col-xs-2">
-            <span class="text-warning">.text-warning</span>
-          </div>
-          <div class="col-xs-2">
-            <span class="text-danger">.text-danger</span>
-          </div>
-
-          <div class="col-xs-2">
-            <span class="text-muted">.text-muted</span>
-          </div>
-        </div>
-
-        <div class="row demo-row">
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-inverse text-white">
-              .bg-inverse
-            </div>
-          </div>
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-success text-white">
-              .bg-success
-            </div>
-          </div>
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-info text-white">
-              .bg-info
-            </div>
-          </div>
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-warning text-white">
-              .bg-warning
-            </div>
-          </div>
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-danger text-white">
-              .bg-danger
+            <div class="col-2">
+              <span class="text-muted">.text-muted</span>
             </div>
           </div>
 
-          <div class="col-xs-2">
-            <div class="p-1 rounded bg-faded">
-              .bg-faded
+          <div class="row demo-row">
+            <div class="col-2">
+              <div class="p-3 rounded bg-inverse text-white">
+                .bg-inverse
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-3 rounded bg-success text-white">
+                .bg-success
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-3 rounded bg-info text-white">
+                .bg-info
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-3 rounded bg-warning text-white">
+                .bg-warning
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-3 rounded bg-danger text-white">
+                .bg-danger
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="p-3 rounded bg-faded">
+                .bg-faded
+              </div>
             </div>
           </div>
         </div>
@@ -213,126 +220,129 @@
         Forms
       </div>
 
-      <div class="lead mb-2">
+      <div class="lead mb-4">
         Form entries should remain pretty standard. Use of the <code>.form-control</code>
         will help everything stay in line.
       </div>
 
-      <div class="row demo-row">
-        <div class="col-xs-3">
-          <div class="form-group">
-            <input type="text" value="" placeholder="Inactive" class="form-control" />
+      <div class="container pr-0 pl-0">
+        <div class="row demo-row">
+          <div class="col-3">
+            <div class="form-group">
+              <input type="text" value="" placeholder="Inactive" class="form-control" />
+            </div>
           </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="form-group has-error">
-            <input type="text" value="" placeholder="Error" class="form-control" />
+          <div class="col-3">
+            <div class="form-group has-error">
+              <input type="text" value="" placeholder="Error" class="form-control" />
+            </div>
           </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="form-group has-success">
-            <input type="text" value="" placeholder="Success" class="form-control" />
+          <div class="col-3">
+            <div class="form-group has-success">
+              <input type="text" value="" placeholder="Success" class="form-control" />
+            </div>
           </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="form-group">
-            <input type="text" value="Disabled" disabled="disabled" class="form-control" />
+          <div class="col-3">
+            <div class="form-group">
+              <input type="text" value="Disabled" disabled="disabled" class="form-control" />
+            </div>
           </div>
-        </div>
-      </div> <!-- /row -->
+        </div> <!-- /row -->
 
-      <div class="row demo-row">
-        <div class="col-xs-6">
-          <div class="form-group">
-            <select class="form-control custom-select">
-              <option value="0">Choose hero</option>
-              <option value="1">Spider Man</option>
-              <option value="2">Wolverine</option>
-              <option value="3">Captain America</option>
-              <option value="4" selected>Select Box: X-Men</option>
-              <option value="5">Crocodile</option>
-            </select>
+        <div class="row demo-row">
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control custom-select">
+                <option value="0">Choose hero</option>
+                <option value="1">Spider Man</option>
+                <option value="2">Wolverine</option>
+                <option value="3">Captain America</option>
+                <option value="4" selected>Select Box: X-Men</option>
+                <option value="5">Crocodile</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <select class="form-control custom-select" disabled>
+                <option value="0">Choose hero</option>
+                <option value="1">Spider Man</option>
+                <option value="2">Wolverine</option>
+                <option value="3">Captain America</option>
+                <option value="4" selected>Select Box: Disabled</option>
+                <option value="5">Crocodile</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div class="col-xs-6">
-          <div class="form-group">
-            <select class="form-control custom-select" disabled>
-              <option value="0">Choose hero</option>
-              <option value="1">Spider Man</option>
-              <option value="2">Wolverine</option>
-              <option value="3">Captain America</option>
-              <option value="4" selected>Select Box: Disabled</option>
-              <option value="5">Crocodile</option>
-            </select>
+
+        <div class="row demo-row">
+          <div class="col-6">
+            <div class="form-group">
+              <textarea  class="form-control" rows="6" cols="80" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Active checkbox</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Active checkbox</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" disabled>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Disabled checkbox</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label class="custom-control custom-radio">
+                <input type="radio" name="radio" value="active" class="custom-control-input" checked>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Active radio</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="custom-control custom-radio">
+                <input type="radio" name="radio" value="inactive" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Inactive radio</span>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label class="custom-control custom-radio">
+                <input type="radio" name="radio" value="disabled" class="custom-control-input" disabled>
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Disabled radio</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="row demo-row">
-        <div class="col-xs-6">
-          <div class="form-group">
-            <textarea  class="form-control" rows="6" cols="80" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="form-group">
-            <label class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" checked>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Active checkbox</span>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Active checkbox</span>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" disabled>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Disabled checkbox</span>
-            </label>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="form-group">
-            <label class="custom-control custom-radio">
-              <input type="radio" name="radio" value="active" class="custom-control-input" checked>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Active radio</span>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label class="custom-control custom-radio">
-              <input type="radio" name="radio" value="inactive" class="custom-control-input">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Inactive radio</span>
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label class="custom-control custom-radio">
-              <input type="radio" name="radio" value="disabled" class="custom-control-input" disabled>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Disabled radio</span>
-            </label>
-          </div>
-        </div>
-      </div>
       <div id="icons" class="mb3">
         <div class="display-4">
           Icons
         </div>
-        <div class="lead mb-2">
+        <div class="lead mb-4">
           These icons are included as SVGs in the project, and can be used by xlink.
         </div>
-        <div class="icons-list mb-3">
+        <div class="icons-list mb-4">
           {{#each icons}}
             <div class="icon-container" data-toggle="tooltip" data-placement="top" title="{{this}}">
               {{icon this}}
@@ -340,67 +350,64 @@
           {{/each}}
         </div>
       </div>
-      <div id="navbar" class="mb-3">
+      <div id="navbar" class="mb-4">
         <div class="display-4">
           Navbar
         </div>
-        <div class="lead">
+        <div class="lead mb-4">
           The nav bar that sits at the top of the page.
         </div>
         {{> nav dashboard_class='active'}}
       </div>
 
-      <div id="nav" class="mb-3">
+      <div id="nav" class="mb-4">
         <div class="display-4">
           Tabbed Nav
         </div>
-        <div class="lead">
+        <div class="lead mb-2">
           Tabbed navigation and tab panels within the app.
         </div>
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a href="#tab1" class="nav-link active" data-toggle="tab">
+            <a href="#tab1" class="nav-link active">
               Models
-              <span class="tag tag-pill tag-default">
+              <span class="nav-pill">
                 3
               </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tab2" data-toggle="tab">
+            <a class="nav-link" href="#tab2">
               Compare &amp; Merge
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tab3" data-toggle="tab">
+            <a class="nav-link" href="#tab3">
               Settings
             </a>
           </li>
         </ul>
-        <div class="tab-content">
-          <div class="tab-pane fade in active" id="tab1">
-            Tab 1 Content
-          </div>
-          <div class="tab-pane fade in" id="tab2">
-            Tab 2 Content
-          </div>
-          <div class="tab-pane fade in" id="tab3">
-            Tab 3 Content
-          </div>
-        </div>
       </div>
 
-      <div id="progress" class="mb-3">
-        <div class="display-4">
+      <div id="progress" class="mb-4">
+        <div class="display-4 mb-4">
           Progress Bars
         </div>
 
         <div class="row demo-row">
-          <div class="col-xs-12">
-            <progress class="progress progress-success" value="25" max="100"></progress>
-            <progress class="progress progress-info" value="50" max="100"></progress>
-            <progress class="progress progress-warning" value="75" max="100"></progress>
-            <progress class="progress progress-danger" value="100" max="100"></progress>
+          <div class="col-12">
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="progress mb-3">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div> <!-- /sliders -->
         </div>
       </div>
@@ -409,7 +416,7 @@
         <div class="display-4">
           Typography
         </div>
-        <div class="lead mt-1 mb-1">
+        <div class="lead mt-1 mb-3">
           This is a .lead paragraph, and will be slightly larger and thinner than normal type.
         </div>
         <div class="demo-row typography-row">
@@ -459,24 +466,24 @@
         <div class="display-4">
           Konstru App
         </div>
-        <div class="lead mt-1 mb-1">
+        <div class="lead mt-1 mb-3">
           Various non-bootstrap, Konstru-specific components used in the app.
         </div>
         <div class="row demo-row">
-          <div class="col-xs-4 text-muted">
+          <div class="col-4 text-muted">
             Avatars
           </div>
-          <div class="col-xs-8">
+          <div class="col-8">
             {{> avatar user=1}}
             {{> avatar user=1 class='avatar-small'}}
           </div>
         </div>
 
         <div class="row demo-row">
-          <div class="col-xs-4 text-muted">
+          <div class="col-4 text-muted">
             Change Graph
           </div>
-          <div class="col-xs-8">
+          <div class="col-8">
             {{> change-graph prototypeData.models.[0].changes}}
           </div>
         </div>

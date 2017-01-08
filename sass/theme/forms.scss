@@ -18,6 +18,10 @@
     color: $gray-light;
     background: #f8f8f8;
   }
+
+  &-narrow {
+    max-width: 280px;
+  }
 }
 
 .has-success {

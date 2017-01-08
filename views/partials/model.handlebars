@@ -1,40 +1,36 @@
-<div href="/prototype/project" class="link-unstyled card media model-preview p-1 mb-1">
-    <div class="media-left">
-      <figure
-        class="model-thumbnail rounded m-0 h-100"
-        style="background-image:url('/images/{{image}}')">
-        {{#if this.copies}}
-        <span class="tag tag-pill tag-default">
-            {{this.copies.length}} copies
+<div href="/prototype/project" class="link-unstyled card model-preview p-3 mb-3">
+  <div class="media-left mr-1">
+    <figure class="model-thumbnail rounded m-0 h-100" style="background-image:url('/images/{{image}}')">
+      {{#if this.copies}}
+      <span class="tag tag-pill tag-default">
+          {{this.copies.length}} copies
+      </span>
+      {{/if}}
+    </figure>
+  </div>
+  <div class="col pr-0">
+    <div class="row">
+      <div class="col-6">
+        <h4 class="media-heading">{{ name }}</h4>
+      </div>
+      <div class="col-6 text-right small">
+        <span class="model-preview-meta text-muted">
+          {{#each changes}}
+            {{#if @last}}
+              Updated <time title="{{readableDate this.updated_at}}">{{timeago this.updated_at}}</time> by {{userName this.user}}
+            {{/if}}
+          {{/each}}
+          <button type="button" class="btn btn-favorite btn-link btn-sm p-0 ml-3" data-toggle="button" aria-pressed="false" autocomplete="off">
+            {{icon 'star'}}
+          </button>
         </span>
-        {{/if}}
-      </figure>
-    </div>
-    <div class="media-body">
-
-      <div class="row">
-        <div class="col-xs-6">
-          <h4 class="media-heading">{{ name }}</h4>
-        </div>
-        <div class="col-xs-6 text-xs-right small">
-          <span class="model-preview-meta text-muted">
-            {{#each changes}}
-              {{#if @last}}
-                Updated <time title="{{readableDate this.updated_at}}">{{timeago this.updated_at}}</time> by {{userName this.user}}
-              {{/if}}
-            {{/each}}
-            <button type="button" class="btn btn-favorite btn-link btn-sm p-0 ml-1" data-toggle="button" aria-pressed="false" autocomplete="off">
-              {{icon 'star'}}
-            </button>
-          </span>
-
-        </div>
-      </div>
-
-      <p class="text-muted">{{ description }}</p>
-
-      <div class="model-change-graph mt-1">
-        {{> change-graph changes }}
       </div>
     </div>
+
+    <p class="text-muted">{{ description }}</p>
+
+    <div class="model-change-graph mt-1">
+      {{> change-graph changes }}
+    </div>
+  </div>
 </div>
