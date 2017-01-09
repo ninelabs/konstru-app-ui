@@ -1,4 +1,9 @@
 .card {
   margin-bottom: $grid-gutter-width-base;
   box-shadow: #e9eaeb 0 1px 0;
+
+  .bg-inverse & {
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0 1px, rgba(0, 0, 0, 0.4) 0 2px 5px;
+  }
 }
