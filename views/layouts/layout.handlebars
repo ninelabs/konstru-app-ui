@@ -27,7 +27,12 @@
     {{{body}}}
     <script>
       svg4everybody();
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip({
+        constraints:[{
+          to: 'window',
+          pin: true
+        }]
+      });
     </script>
   </body>
 </html>

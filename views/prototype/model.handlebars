@@ -1,0 +1,63 @@
+{{#contentFor "pageTitle"}}{{prototypeData.models.[1].name}}{{/contentFor}}
+
+{{> nav projects_class='active'}}
+
+{{> model-header model=prototypeData.models.[1] project=prototypeData.projects.[0]}}
+
+<div class="container-fliud tab-content">
+
+    <div class="tab-pane fade in show active" id="model-visualize">
+
+      <div class="container-fliud p-3">
+
+        <div class="d-flex w-100">
+
+          <div class="mr-3">
+            {{> version-dropdown model=prototypeData.models.[1]}}
+          </div>
+          <div class="mr-3">
+            <span class="btn-group" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                Changes
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off">
+                Selected
+              </label>
+            </span>
+          </div>
+          <div class="mr-3">
+            {{> compare-dropdown model=prototypeData.models.[1] models=prototypeData.models}}
+          </div>
+          <div class="ml-auto p-x3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text-muted">Filter elements:</span>
+              <strong>4,567</strong>
+            </button>
+          </div>
+
+        </div>
+        <div class="w-100 pt-1">
+          {{> diffstat-graph model=prototypeData.models.[1]}}
+        </div>
+
+      </div>
+
+      {{> model-viewer model=prototypeData.models.[1]}}
+
+    </div>
+
+    <div class="tab-pane fade" id="model-history">Default 2</div>
+
+    <div class="tab-pane fade" id="model-copies">Default 3</div>
+
+    <div class="tab-pane fade" id="model-settings">
+
+      {{> model-settings model=prototypeData.models.[1]}}
+
+    </div>
+
+</div>
+
+{{>footer}}

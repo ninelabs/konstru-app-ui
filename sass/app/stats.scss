@@ -1,9 +1,14 @@
 /* stylelint-disable selector-no-type */
 
 .stats {
-  height: 2.65rem;
   overflow: hidden;
   cursor: default;
+
+  .nowrap {
+    display: inline-block;
+    text-indent: 0.25rem;
+    white-space: nowrap;
+  }
 
   &-graph {
     height: 1rem;
@@ -13,12 +18,33 @@
     transition: margin-top 0.2s ease;
 
     &-item {
+      position: relative;
       display: block;
       float: left;
       height: 1rem;
       overflow: hidden;
-      white-space: nowrap;
+      line-height: 1rem;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        border-right: 1px solid $gray-lightest;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
     }
+  }
+
+  .bg-danger,
+  .bg-success,
+  .bg-warning {
+    color: #fff;
   }
 
   &-text {
@@ -30,9 +56,13 @@
     }
   }
 
-  &:hover {
+  &.compact:hover {
+    height: 2.65rem;
+
     .stats-graph {
       margin-top: -1.6rem;
     }
+
   }
+
 }

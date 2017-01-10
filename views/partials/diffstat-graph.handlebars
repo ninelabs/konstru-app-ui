@@ -1,0 +1,8 @@
+<div class="stats expanded">
+  <div class="stats-graph m-0">
+    <div title="{{model.diffstat.additions}} additions" data-toggle="tooltip" class="stats-graph-item additions bg-success small" style="width:{{ statPercent model.diffstat 'additions' }}%;">&#8202;<span class="nowrap">{{model.diffstat.additions}} additions</span></div>
+    <div title="{{model.diffstat.deletions}} deletions" data-toggle="tooltip" class="stats-graph-item deletions bg-danger small" style="width:{{ statPercent model.diffstat 'deletions' }}%;">&#8202;<span class="nowrap">{{model.diffstat.deletions}} deletions</span></div>
+    <div title="{{model.diffstat.updates}} updates" data-toggle="tooltip" class="stats-graph-item updated bg-warning small" style="width:{{ statPercent model.diffstat 'updates' }}%;">&#8202;<span class="nowrap">{{model.diffstat.updates}} updates</span></div>
+    <div title="{{model.diffstat.unchanged}} unchanged" data-toggle="tooltip" class="stats-graph-item unchanged bg-faded small" style="width:{{ statPercent model.diffstat 'unchanged' }}%;">&#8202;<span class="nowrap">{{model.diffstat.unchanged}} unchanged</span></div>
+  </div>
+</div>

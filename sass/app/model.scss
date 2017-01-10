@@ -27,6 +27,31 @@
     line-height: 1.2;
   }
 
+  &-viewer {
+    position: relative;
+  }
+
+  &-viewer-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &-version-dropdown {
+    min-width: 300px;
+  }
+
+  &-compare-dropdown {
+    min-width: 400px;
+  }
+
+  &-image {
+    padding-bottom: 56.25%; //16x9 aspect
+    background-position: center;
+    background-size: cover;
+  }
+
   &-thumbnail {
     position: relative;
     width: 100%;
@@ -34,7 +59,7 @@
     background-position: center;
     background-size: cover;
 
-    .tag {
+    .badge {
       position: absolute;
       right: 10px;
       bottom: 10px;

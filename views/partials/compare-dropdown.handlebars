@@ -1,0 +1,40 @@
+<div class="btn-group">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="text-muted">Compare to:</span>
+    <strong>Previous Version</strong>
+  </button>
+  <div class="dropdown-menu model-compare-dropdown" aria-labelledby="dropdownMenuButton">
+
+    {{#each model.changes}}
+        {{#if @first}}
+        <a class="dropdown-item" href="#">
+          {{> avatar user=user class="avatar-small"}}
+          <strong>{{../model.name}}</strong>
+          <small class="text-muted">
+            Version {{version}}
+          </small>
+          <span class="float-xs-right text-muted small">{{timeago updated_at}}</span>
+        </a>
+      {{/if}}
+    {{/each}}
+    {{#each models}}
+      {{#each changes}}
+        {{#if @first}}
+          <a class="dropdown-item" href="{{../url}}">
+            {{> avatar user=user class="avatar-small"}}
+            <strong>{{../name}}</strong>
+            <small class="text-muted">
+              Version {{version}}
+            </small>
+            <span class="float-xs-right text-muted small">{{timeago updated_at}}</span>
+          </a>
+        {{/if}}
+      {{/each}}
+    {{/each}}
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">
+      Select a specific model and version&hellip;
+    </a>
+
+  </div>
+</div>
