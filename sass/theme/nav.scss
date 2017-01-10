@@ -14,7 +14,8 @@
     border-width: 0 0 4px;
 
     &:hover {
-      border-color: transparent transparent $nav-tabs-link-hover-border-color transparent;
+      color: $color-dark;
+      border-color: transparent;
       border-width: 0 0 4px;
     }
 
@@ -26,15 +27,17 @@
       }
     }
 
-    .tag-pill {
+    .nav-pill {
       position: relative;
       display: inline-block;
+      padding: 0 0.3rem;
       margin-left: 0.2rem;
       font-size: 0.75rem;
       font-weight: inherit;
       color: inherit;
       background: transparent;
       border: 1px solid $gray-lightest;
+      border-radius: 10px;
     }
   }
 }

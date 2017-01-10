@@ -1,10 +1,9 @@
 @import "variables";
-@import "../node_modules/bootstrap/scss/bootstrap-flex";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "mixins";
 @import "theme/buttons";
 @import "theme/cards";
-@import "theme/colors";
 @import "theme/dropdown";
 @import "theme/forms";
 @import "theme/icon";

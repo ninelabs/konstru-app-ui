@@ -27,6 +27,11 @@ app.use('/css', express.static(path.join(__dirname, 'public/css')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 app.use('/js', express.static(path.join(__dirname, 'public/js')));
 
+app.use((req, res, next) => {
+  helpers.clearBlocks();
+  next();
+});
+
 app.get('/', (req, res) => {
   res.render('index');
 });
