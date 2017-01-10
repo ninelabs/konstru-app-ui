@@ -6,7 +6,7 @@
     "image": "projects/metlife.jpg",
     "url": "/prototype/model",
     "diffstat": {
-      "additions": 16,
+      "additions": 0,
       "deletions": 34,
       "updates": 124,
       "unchanged": 1245
@@ -46,7 +46,7 @@
     "image": "projects/att.jpg",
     "url": "/prototype/model",
     "diffstat": {
-      "additions": 16,
+      "additions": 1,
       "deletions": 34,
       "updates": 124,
       "unchanged": 1245

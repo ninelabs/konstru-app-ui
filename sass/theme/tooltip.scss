@@ -1,0 +1,7 @@
+.tooltip {
+  &.bs-tether-pinned {
+    .tooltip-inner::before {
+      display: none;
+    }
+  }
+}
