@@ -6,7 +6,7 @@
 
 <div class="container-fliud tab-content">
 
-    <div class="tab-pane fade in active" id="model-visualize">
+    <div class="tab-pane fade" id="model-visualize">
 
       <div class="container-fliud p-1">
 
@@ -51,7 +51,11 @@
 
     <div class="tab-pane fade" id="model-copies">Default 3</div>
 
-    <div class="tab-pane fade" id="model-settings">Default 3</div>
+    <div class="tab-pane fade in active" id="model-settings">
+
+      {{> model-settings model=prototypeData.models.[1]}}
+
+    </div>
 
 </div>
 

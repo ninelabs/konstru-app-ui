@@ -18,11 +18,26 @@
     transition: margin-top 0.2s ease;
 
     &-item {
+      position: relative;
       display: block;
       float: left;
       height: 1rem;
       overflow: hidden;
       line-height: 1rem;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        border-right: 1px solid $gray-lightest;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+
     }
   }
 
