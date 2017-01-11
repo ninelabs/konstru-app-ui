@@ -4,35 +4,20 @@
 
 {{> project-header prototypeData.projects.[0]}}
 
-<div class="container-fluid pt-3">
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <input type="text" value="" placeholder="Filter&hellip;" class="form-control form-control-narrow">
-      </div>
-    </div>
-    <div class="col text-right">
-      <div class="form-group">
-        <button class="btn btn-primary">Add a Model</button>
-      </div>
-    </div>
+<div class="container-fliud tab-content">
+
+  <div class="tab-pane fade in" id="project-models">
+    {{> project-models models=prototypeData.models}}
   </div>
-  <div class="model-list media-list mb-3">
-    {{#each prototypeData.models}}
-      <div class="model-list-item">
-        {{> model this}}
-        {{#if this.copies }}
-          <div class="model-list media-list ml-3 pl-4">
-            {{#each this.copies}}
-              <div class="model-list-item">
-                {{> model this}}
-              </div>
-            {{/each}}
-          </div>
-        {{/if}}
-      </div>
-    {{/each}}
+
+  <div class="tab-pane fade in show active" id="project-merge">
+    {{> project-merge }}
   </div>
+
+  <div class="tab-pane fade" id="project-settings">
+    {{> project-settings }}
+  </div>
+
 </div>
 
 {{>footer}}
