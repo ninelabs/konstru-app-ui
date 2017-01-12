@@ -6,36 +6,49 @@
     "image": "projects/metlife.jpg",
     "url": "/prototype/model",
     "diffstat": {
-      "additions": 0,
-      "deletions": 34,
+      "additions": 600,
+      "deletions": 15,
       "updates": 124,
-      "unchanged": 1245
+      "unchanged": 15
     },
     "changes": [
       {
         "user": 1,
         "version": 1,
-        "updated_at": "2016-12-16T15:10:52.376Z"
+        "updated_at": "2016-12-16T15:10:52.376Z",
+        "app": "Revit",
+        "app-icon-url": "http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Autodesk-Revit-icon.png"
       },
       {
         "user": 2,
         "version": 2,
-        "updated_at": "2016-12-16T18:10:52.376Z"
+        "updated_at": "2016-12-16T18:10:52.376Z",
+        "app": "ArchiCAD 20",
+        "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
+
       },
       {
         "user": 1,
         "version": 3,
-        "updated_at": "2016-12-18T15:10:52.376Z"
+        "updated_at": "2016-12-18T15:10:52.376Z",
+        "app": "Revit",
+        "app-icon-url": "http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Autodesk-Revit-icon.png"
+
       },
       {
         "user": 3,
         "version": 4,
-        "updated_at": "2016-12-20T15:10:52.376Z"
+        "updated_at": "2016-12-20T15:10:52.376Z",
+        "app": "Revit",
+        "app-icon-url": "http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Autodesk-Revit-icon.png"
+
       },
       {
         "user": 4,
         "version": 5,
-        "updated_at": "2016-12-21T15:10:52.376Z"
+        "updated_at": "2016-12-21T15:10:52.376Z",
+        "app": "ArchiCAD 20",
+        "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
       }
     ]
   },
@@ -67,11 +80,17 @@
         "changes": [
           {
             "user": 4,
-            "updated_at": "2016-12-16T15:10:52.376Z"
+            "updated_at": "2016-12-16T15:10:52.376Z",
+            "app": "Revit",
+            "app-icon-url": "http://icons.iconarchive.com/icons/dakirby309/simply-styled/256/Autodesk-Revit-icon.png"
+
           },
           {
             "user": 3,
-            "updated_at": "2016-12-22T15:10:52.376Z"
+            "updated_at": "2016-12-22T15:10:52.376Z",
+            "app": "ArchiCAD 20",
+            "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
+
           }
         ]
       }
@@ -80,17 +99,26 @@
       {
         "user": 1,
         "version": 1,
-        "updated_at": "2016-12-16T15:10:52.376Z"
+        "updated_at": "2016-12-16T15:10:52.376Z",
+        "app": "ArchiCAD 20",
+        "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
+
       },
       {
         "user": 2,
         "version": 2,
-        "updated_at": "2016-12-19T18:10:52.376Z"
+        "updated_at": "2016-12-19T18:10:52.376Z",
+        "app": "ArchiCAD 20",
+        "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
+
       },
       {
         "user": 1,
         "version": 3,
-        "updated_at": "2016-12-22T15:10:52.376Z"
+        "updated_at": "2016-12-22T15:10:52.376Z",
+        "app": "ArchiCAD 20",
+        "app-icon-url": "http://archicad.com/en/wp-content/themes/archicad/i/favicon/favicon-180x180.png"
+
       }
     ]
   }

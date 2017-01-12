@@ -1,0 +1,46 @@
+<div class="project-merge-toolbar p-3">
+  <div class=" d-flex align-items-center w-100">
+
+    <div class="btn-group mr-2">
+      <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button">
+        <span class="text-muted">Merge changes from: </span>
+        First Level
+      </button>
+      <div role="menu" class="dropdown-menu">
+        <div class="dropdown-item">
+          Second level
+        </div>
+        <div class="dropdown-item">
+          Third level
+        </div>
+        <div class="dropdown-item">
+          Fourth level
+        </div>
+      </div>
+    </div><!-- /btn-group -->
+
+    {{icon 'right-open-mini' 'icon-small' }}
+
+    <div class="btn-group ml-2 mr-auto">
+      <button data-toggle="dropdown" class="btn btn-secondary btn-block dropdown-toggle" type="button">
+        <span class="text-muted">Into: </span>
+        Master Model
+      </button>
+      <div role="menu" class="dropdown-menu">
+        {{#each prototypeData.models}}
+          <div class="dropdown-item">
+            {{name}}
+          </div>
+        {{/each}}
+      </div>
+    </div><!-- /btn-group -->
+
+    <button class="btn btn-primary">Merge</button>
+
+  </div>
+  <div class="project-merge-diffstat w-100 pt-2">
+    {{> diffstat-graph model=prototypeData.models.[0]}}
+  </div>
+</div>
+
+{{> model-viewer model=prototypeData.models.[0]}}

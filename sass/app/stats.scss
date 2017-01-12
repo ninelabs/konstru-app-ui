@@ -56,10 +56,10 @@
     }
   }
 
-  &.compact:hover {
+  &.compact {
     height: 2.65rem;
 
-    .stats-graph {
+    &:hover .stats-graph {
       margin-top: -1.6rem;
     }
 
