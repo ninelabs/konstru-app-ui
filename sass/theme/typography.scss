@@ -1,5 +1,12 @@
 /* stylelint-disable selector-no-type */
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
 small,
 .small {
   font-size: 83%;
@@ -34,6 +41,10 @@ blockquote {
   }
 }
 
+strong {
+  font-weight: 500;
+}
+
 .section-header {
   padding-top: 0.225rem;
   padding-bottom: 0.225rem;
@@ -47,4 +58,8 @@ blockquote {
 
 .text-semibold {
   font-weight: 500;
+}
+
+.text-dark {
+  color: $color-dark;
 }
