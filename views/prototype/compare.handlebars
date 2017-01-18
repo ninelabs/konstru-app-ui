@@ -1,0 +1,48 @@
+{{#contentFor "pageTitle"}}Compare - My Great Project{{/contentFor}}
+
+{{> nav projects_class='active'}}
+
+{{> project-header prototypeData.projects.[0] compare_class='active'}}
+
+<div class="container-fluid pt-3">
+
+  <div class="row pb-3">
+    <div class="col col-auto">
+      <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button">
+          <span class="text-muted">Merge changes from:</span> First Level
+          <span class="caret"></span>
+        </button>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="#" class="dropdown-menu-link">Name</a></li>
+          <li><a href="#" class="dropdown-menu-link">Recently updated</a></li>
+          <li><a href="#" class="dropdown-menu-link">Number of models</a></li>
+        </ul>
+      </div>
+      {{icon 'right-open' 'icon-toolbar'}}
+      <div class="btn-group">
+        <button data-toggle="dropdown" class="btn btn-secondary dropdown-toggle" type="button">
+          <span class="text-muted">Into:</span> Master Model
+          <span class="caret"></span>
+        </button>
+        <ul role="menu" class="dropdown-menu">
+          <li><a href="#" class="dropdown-menu-link">Name</a></li>
+          <li><a href="#" class="dropdown-menu-link">Recently updated</a></li>
+          <li><a href="#" class="dropdown-menu-link">Number of models</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col text-right">
+      <a href="#" class="btn btn-success float-right">Merge</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      {{> diffstat-graph model=prototypeData.models.[1]}}
+    </div>
+  </div>
+
+
+</div>
