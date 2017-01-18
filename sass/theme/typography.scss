@@ -7,6 +7,12 @@ h4 {
   font-weight: 300;
 }
 
+button,
+select,
+textarea {
+  font-family: $font-family-base;
+}
+
 small,
 .small {
   font-size: 83%;
